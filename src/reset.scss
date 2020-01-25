@@ -31,7 +31,7 @@ dd {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  //min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -55,10 +55,11 @@ img {
 }
 
 /* Natural flow and rhythm in articles by default */
+/*
 article > * + * {
   margin-top: 1em;
 }
-
+*/
 /* Inherit fonts for inputs and buttons */
 input,
 button,
