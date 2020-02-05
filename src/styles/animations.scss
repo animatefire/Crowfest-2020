@@ -1,9 +1,9 @@
 .content-left {
-  animation: fadeIn 0.75s, slideInRight 0.75s;
+  animation: slideIn 0.75s, transitionIn 1.75s;
 }
 
 .content-right {
-  animation: slideInLeft 0.75s, fadeIn 3.75s;
+  animation: slideIn 0.75s, transitionIn 1.75s;
 }
 
 @keyframes transitionIn {
@@ -15,20 +15,11 @@
   }
 }
 
-@keyframes slideInRight {
+@keyframes slideIn {
   from {
-    margin-left: 100%;
+    transform: translate(10rem);
   }
   to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    margin-right: 100%;
-  }
-  to {
-    margin-right: 0%;
+    transform: translateX(0);
   }
 }
