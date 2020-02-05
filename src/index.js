@@ -1,8 +1,9 @@
 import './styles/reset.scss';
 import './styles/style.sass';
 import './styles/animations.scss';
-//import { homedir } from 'os';
+import './styles/layouts.scss';
 import Utils from './services/Utils';
+import '/Users/johnpfannkuchen/Documents/Web Development/Projects/Music-Festival-2020/src/assets/img/background.jpg';
 
 import Home from './views/pages/Home.js';
 import About from './views/pages/About.js';

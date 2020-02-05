@@ -1,15 +1,46 @@
-$color-1: #1313ece6
-$color-2: #e0dcda
-$font-stack: arial, sans-serif
+$color-1: hsl(220, 40%, 50%)
+$color-2: #eee
+//$color-3: hsl(100, 40%, 50%)
+$font-stack: Lato, sans-serif
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+  margin: 0
+  padding: 0
+
+h1
+  font-size: 2.4rem
+
+h2
+  font-size: 2.2rem
+
+h3
+  font-size: 2rem
+
+h4
+  font-size: 1.6rem
+  text-transform: uppercase
+
+h5
+  font-size: 1.5rem
+  text-transform: uppercase
+
+h6
+  font-size: 1.4rem
+  text-transform: uppercase
+
+html
+  font-size: 62.5%
 
 body
   text-align: justify
   text-justify: left
-
   height: 100vh
-  display: grid
   font-family: $font-stack
-  grid-template-areas: "header" "content" "footer"
+  background-color: $color-2
+  box-sizing: border-box
 
 header
   grid-area: header
@@ -19,35 +50,60 @@ header
   flex-wrap: nowrap
   padding: 0 1%
 
+section
+  //margin: 1em
+  border: .1rem solid $color-1
+  p
+    font-size: 1.6rem
+
 .logo
-  height: 3em
+  height: 3rem
 
 #content
-  grid-area: content
   display: grid
+  grid-template-areas: "content-left" "content-right"
 
 .content-left
   grid-area: content-left
-  svg
+  #camping
     transform-origin: -50%, -50%
     position: relative
     top: 50%
     left: 50%
-    height: 5em
-    fill: $color-1
+    height: 5rem
+    color: $color-1
+    font-size: 3rem
+    align-text: center
+
+#home
+  display: flex
+  background: url(../assets/img/background.jpg)
+  background-repeat: no-repeat
+  //background-size: 100vh
+  position: relative
 
 .content-right
   grid-area: content-right
 
 footer
   grid-area: footer
+  min-height: 3rem
 
 footer,
 header
   background-color: $color-1
 
-.nav__link, .logo, footer
-  font-size: 0.9em
+.nav__link
+  text-decoration: none
+  color: $color-2
+  font-family: $font-stack
+
+.logo
+  text-decoration: none
+  color: $color-2
+  font-family: $font-stack
+
+footer
   text-decoration: none
   color: $color-2
   font-family: $font-stack
@@ -56,11 +112,29 @@ footer
   ul
     list-style-type: none
 
-button
+.btn, .btn:visited
+  color: $color-2
+  border: none
+  text-transform: uppercase
+  padding: 2rem
+  width: 15rem
   position: relative
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
+  display: inline-block
+  //top: 50%
+  //left: 50%
+  //transform: translate(-50%, -50%)
+  background-color: $color-1
+  border-radius: 10rem
+  transition: all .2s
+  font-size: 1.6rem
+
+.btn:active
+  transform: translateY(1px)
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2)
+
+.btn:hover
+  transform: translateY(3px)
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.2)
 
   iframe
     width: 100%
@@ -69,25 +143,23 @@ button
     padding: 0
     border: none
 
-@media only screen and (min-width: 500px)
+  body
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    position: relative
+    min-height: 100vh
+
+@media only screen and (min-width: 50rem)
   #content
     grid-auto-columns: 1fr 1fr
-    grid-template-areas: "content-left content-right"
+    grid-template-areas: 'content-left content-right'
+    gap: 0.5rem
 
-  .nav__link, .logo, footer
-    font-size: 1.2em
-  header
-    height: 5em
-
-.location
   iframe
     width: 100%
     height: 50vh
 
-img
-  //width: 100%
-  //height: auto
+//@media only screen and (min-width: 1024px){}
 
-@media only screen and (min-width: 1024px)
-
-@media only screen and (min-width: 1920px)
+//@media only screen and (min-width: 1920px){}
