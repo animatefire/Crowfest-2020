@@ -1,10 +1,10 @@
-.content-left {
-  animation: slideIn 0.75s, transitionIn 1.75s;
+.content {
+  animation: transitionIn 1.75s, slideIn 0.75s;
 }
 
-.content-right {
-  animation: slideIn 0.75s, transitionIn 1.75s;
-}
+//.content--left {}
+
+//.content--right {}
 
 @keyframes transitionIn {
   from {

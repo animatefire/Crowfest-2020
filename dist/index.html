@@ -15,22 +15,32 @@
       rel="stylesheet"
     />
 
-    <title>Crowfest 2020</title>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <title>Crowfest | 2020</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="/"
-        ><img class="logo" src="img/crow-silhouette-freesvg.org.svg"
+        ><img class="header__logo" src="img/crow-silhouette-freesvg.org.svg"
       /></a>
-      <nav>
+      <nav class="header__nav">
         <a href="#/tickets" class="nav__link">Tickets</a>
         <a href="#/location" class="nav__link">Location</a>
         <a href="#/artists" class="nav__link">Artists</a>
         <a href="#/camping" class="nav__link">Camping</a>
         <a href="#/about" class="nav__link">About</a>
       </nav>
+      <div class="header__splash">
+        <div id="header__banner">
+          <div id="header__splash--foreground"></div>
+          <section id="header__title"><h1>Crowfest 2020</h1></section>
+          <div id="header__banner"></div>
+          <div id="banner__splash--background"></div>
+        </div>
+      </div>
     </header>
-    <section id="content">
+    <section id="content" class="content">
       <!--
       <section class="location">
         <iframe
@@ -50,10 +60,10 @@
       <video></video>
       </!--section>
     --></section>
-    <footer>
-      <ul>
-        <li>Contact Us</li>
-        <li>Volunteer</li>
+    <footer class="footer">
+      <ul class="footer__ul">
+        <li class="">Contact Us</li>
+        <li class="">Volunteer</li>
       </ul>
     </footer>
   </body>
