@@ -1,0 +1,10 @@
+.header__nav {
+  background-color: $color-red;
+
+  a {
+    text-decoration: none;
+    font-family: $font-stack;
+    font-size: 1.5rem;
+    padding: 0 1%;
+  }
+}

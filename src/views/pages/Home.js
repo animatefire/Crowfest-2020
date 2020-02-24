@@ -1,11 +1,14 @@
 const Home = {
   render: () => {
     const markup = `
-    
-      <section class="content" id="home">
-          <button class="btn btn--rounded btn--animated btn--color-1">Tickets</button>
-          
-      </section>
+    <header class="header">
+      
+        <h1 id="header__title">Crowfest 2020</h1>
+      
+    </header>
+      <header class="header">
+          <a href="tickets.html"><button class="btn btn--color-white btn--center">Tickets</button></a>
+      </header>
     
     `;
     return markup;

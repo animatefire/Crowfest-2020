@@ -1,7 +1,5 @@
-import './styles/reset.scss';
-import './styles/style.sass';
-import './styles/animations.scss';
-import './styles/layouts.scss';
+import './styles/style.scss';
+
 import Utils from './services/Utils';
 import '/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/img/background.jpg';
 

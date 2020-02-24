@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="bundle.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Crowfest | 2020</title>
+  </head>
+  <body>
+    <nav class="header__nav">
+      <a href="index.html" class="nav__link">Home</a>
+    </nav>
+
+    <div id="eventbrite-widget-container-92799043437"></div>
+
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+      var exampleCallback = function() {
+        console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '92799043437',
+        iframeContainerId: 'eventbrite-widget-container-92799043437',
+
+        // Optional
+        iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback // Method called when an order has successfully completed
+      });
+    </script>
+
+    <footer class="footer">
+      <ul class="footer__ul">
+        <li class="">Contact Us</li>
+        <li class="">Volunteer</li>
+      </ul>
+    </footer>
+  </body>
+</html>
