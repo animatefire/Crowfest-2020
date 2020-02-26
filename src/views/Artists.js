@@ -1,4 +1,4 @@
-import schedule from '../../assets/data/schedule';
+import schedule from "../assets/data/schedule";
 //import artists from '../../assets/data/artists';
 
 /*
@@ -16,7 +16,7 @@ const header = `
 
 let Artists = {
   render: () => {
-    let day = 'FRIDAY';
+    let day = "FRIDAY";
     let markup = `
     <div class = "row">
     <div class="col-1-of-2">
@@ -36,7 +36,7 @@ let Artists = {
 
     ////////////////////////////////////
 
-    day = 'SATURDAY';
+    day = "SATURDAY";
     markup += `
     <div class = "row">
     <div class="col-1-of-2">

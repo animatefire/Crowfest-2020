@@ -1,25 +1,27 @@
 import './styles/style.scss';
 import '/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/img/background.jpg';
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-//import VueRouter from 'vue-router';
-//Vue.use(VueRouter);
+Vue.use(VueRouter);
+Vue.config.productionTip = false;
 
+// Component Imports
 //import app from './app.vue';
+import navigation from './components/Nav.vue';
+import foot from './components/Footer.vue';
 
-let app = new Vue({
+// View Imports
+import home from './views/Home.vue';
+
+Vue.component('navigation', navigation);
+Vue.component('foot', foot);
+Vue.component('home', home);
+
+var app = new Vue({
   el: '#app',
   data: {
-    title: 'Crowfest 2019'
-  }
-});
-
-Vue.component('foot', {
-  template: `<footer>
-    <p>something</p>
-  </footer>`,
-  data() {
-    return {};
+    title: 'Crowfest 2020'
   }
 });
 

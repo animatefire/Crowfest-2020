@@ -1,0 +1,9 @@
+<template>
+  <iframe
+    class="col-1-of-2"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47361.694670765355!2d-75.96873985192474!3d42.10520235632155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89da96531812450f%3A0x505b9e99ebaa9518!2sNY-17C%2C%20New%20York!5e0!3m2!1sen!2sus!4v1582499841660!5m2!1sen!2sus"
+    frameborder="0"
+    style="border:0;"
+    allowfullscreen
+  ></iframe>
+</template>
