@@ -1,20 +1,22 @@
 .btn {
   border: none;
   text-transform: uppercase;
-  padding: 2rem;
-  width: 15rem;
-  border-radius: 10rem;
-  transition: all 0.2s;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 7rem;
+  transition: all 0.3s;
   font-size: 1.6rem;
 
-  &--color-white {
-    background-color: $color-white;
-    color: $color-white;
+  &--color-primary {
+    background-color: $color-primary;
+    color: $color-secondary;
   }
 
   &--center {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    transform-origin: -50, -50;
+    left: 50%;
+    top: 50%;
   }
 
   //&::visited{}

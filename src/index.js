@@ -39,6 +39,7 @@ const router = async () => {
 
   let page = routes[parsedURL] ? routes[parsedURL] : Error404;
   content.innerHTML = await page.render();
+  //what gets stuffed into the content.innerHTML is only what the function page returns...
   //await page.after_render();
 };
 
