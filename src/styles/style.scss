@@ -1,0 +1,41 @@
+//abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+
+//base
+@import 'base/base';
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/animations';
+@import 'base/utilities';
+
+//components
+@import 'components/button';
+@import 'components/logo';
+
+//layouts
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/content';
+@import 'layout/grid';
+
+//pages
+@import 'pages/location';
+@import 'pages/home';
+
+//.block = standalone component that is meaningful on its own
+//.block__element = part of a block that has no standalone meaning
+//.block__element--modifier = a different version of a block or an element
+//colors
+
+@media only screen and (min-width: 50rem) {
+  #content {
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: 'content-left content-right';
+    gap: 0.5rem;
+  }
+}
+//@media only screen and (min-width: 1024px){};
+
+//@media only screen and (min-width: 1920px){};

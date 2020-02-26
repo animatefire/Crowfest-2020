@@ -1,9 +1,7 @@
-import './styles/reset.scss';
-import './styles/style.sass';
-import './styles/animations.scss';
-import './styles/layouts.scss';
+import './styles/style.scss';
+
 import Utils from './services/Utils';
-import '/Users/johnpfannkuchen/Documents/Web Development/Projects/Music-Festival-2020/src/assets/img/background.jpg';
+import '/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/img/background.jpg';
 
 import Home from './views/pages/Home.js';
 import About from './views/pages/About.js';
@@ -41,6 +39,7 @@ const router = async () => {
 
   let page = routes[parsedURL] ? routes[parsedURL] : Error404;
   content.innerHTML = await page.render();
+  //what gets stuffed into the content.innerHTML is only what the function page returns...
   //await page.after_render();
 };
 

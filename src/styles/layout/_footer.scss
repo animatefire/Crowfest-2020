@@ -1,0 +1,10 @@
+.footer {
+  //grid-area: footer;
+  min-height: 3rem;
+  text-decoration: none;
+  background-color: $color-primary;
+
+  &__ul {
+    list-style-type: none;
+  }
+}

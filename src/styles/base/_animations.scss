@@ -1,10 +1,17 @@
-.content-left {
-  animation: slideIn 0.75s, transitionIn 1.75s;
+$slow: 1.75s;
+$fast: 0.75s;
+
+.content {
+  animation: transitionIn $slow, slideIn $fast;
 }
 
-.content-right {
-  animation: slideIn 0.75s, transitionIn 1.75s;
+.schedule {
+  animation: transitionIn $slow, slideIn $slow;
 }
+
+//.content--left {}
+
+//.content--right {}
 
 @keyframes transitionIn {
   from {

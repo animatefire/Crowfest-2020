@@ -3,18 +3,18 @@ let Camping = {
     const markup = `
     
     <section class="content-left">
-    <i id="camping" class="material-icons">explore</i>
+    <i class="material-icons">explore</i>
     </section>
 
-    <section class="content-right">
+    <section class="content">
       <p>
         <ul>
-        <li>Pitch a tent or park a camper.</li>
-        <li>First come first serve</li>
-        <li>No cost</li>
-        <li>Bathrooms available</li>
-        <li>NO showers</li>
-        <li>Take out what you bring in</li>
+        <li><p>Pitch a tent or park a camper.</p></li>
+        <li><p>First come first serve.</p></li>
+        <li><p>No cost.</p></li>
+        <li><p>Bathrooms available.</p></li>
+        <li><p>NO showers.</p></li>
+        <li><p>Take out what you bring in.</p></li>
         </ul>
       </p>
     </section>
