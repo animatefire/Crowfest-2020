@@ -1,9 +1,60 @@
 <template>
-  <iframe
-    class="col-1-of-2"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47361.694670765355!2d-75.96873985192474!3d42.10520235632155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89da96531812450f%3A0x505b9e99ebaa9518!2sNY-17C%2C%20New%20York!5e0!3m2!1sen!2sus!4v1582499841660!5m2!1sen!2sus"
-    frameborder="0"
-    style="border:0;"
-    allowfullscreen
-  ></iframe>
+  <div class="map" />
 </template>
+
+<script>
+  /////////////
+  import gmapsInit from '/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/utils/gmaps.js';
+
+  export default {
+    name: 'map2',
+    async mounted() {
+      var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+
+      mapboxgl.accessToken =
+        'pk.eyJ1Ijoiam9obnBmYW5ua3VjaGVuIiwiYSI6ImNrNzU2YjF2MTB2ZmEza3I5ZWI1em1veWoifQ.JzP8nbkHZg8SzFeC6U0mKQ';
+      var map = new mapboxgl.Map({
+        container: $this.$el,
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+    },
+
+    name: 'map',
+    async mounted() {
+      try {
+        const google = await gmapsInit();
+
+        const map = new google.maps.Map(this.$el, {
+          center: { lat: 42.058, lng: -76.3445 },
+
+          address: '5 Locust St, Barton, NY 13734, USA',
+          zoom: 17
+        });
+
+        //map.map
+
+        /*
+        const geocoder = new google.maps.Geocoder();
+        const map = new google.maps.Map(this.$el);
+
+        geocoder.geocode(
+          { address: '5 Locust St, Barton, NY 13734, USA' },
+          (results, status) => {
+            if (status !== 'OK' || !results[0]) {
+              throw new Error(status);
+            }
+
+            map.setCenter(results[0].geometry.location);
+            map.fitBounds(results[0].geometry.viewport);
+          }
+
+        );
+        */
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  };
+</script>
+
+<style></style>

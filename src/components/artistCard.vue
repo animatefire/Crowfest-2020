@@ -1,21 +1,15 @@
 <template>
-  <div>
-    <div v-for="artist in schedule">
-      <h2>{{artist.artist}}</h2>
-      <h2>{{artist.day}}</h2>
-      <h2>{{artist.time}}</h2>
-      <h2>{{artist.stage}}</h2>
-    </div>
+  <div class="schedule" v-if="day == schedule.day">
+    <h2>{{schedule[i].artist}}</h2>
+    <h3>{{schedule[i].time}}pm {{schedule[i].day}}</h3>
+    <h6>Performing at the {{schedule[i].stage}}</h6>
   </div>
 </template>
 
 <script>
-import schedule from "../assets/data/schedule";
-export default { schedule };
 ////////////////////////////////////
 /*
 
-<div v-for="todo in todos"></div>
 day = "SATURDAY";
 markup += `
     <div class = "row">

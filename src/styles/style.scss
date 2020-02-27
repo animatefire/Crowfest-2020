@@ -13,6 +13,7 @@
 //components
 @import 'components/button';
 @import 'components/logo';
+@import 'components/map';
 
 //layouts
 @import 'layout/nav';
@@ -23,6 +24,9 @@
 //pages
 @import 'pages/location';
 @import 'pages/home';
+
+//vendor
+@import 'vendor/mapbox';
 
 //.block = standalone component that is meaningful on its own
 //.block__element = part of a block that has no standalone meaning
