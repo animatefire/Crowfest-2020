@@ -1,5 +1,5 @@
 <template>
-  <section class="content">
+  <section>
     <i class="material-icons">explore</i>
     <ul>
       <li>
@@ -21,5 +21,5 @@
         <p>Take out what you bring in.</p>
       </li>
     </ul>
-  </section> </template
->;
+  </section>
+</template>

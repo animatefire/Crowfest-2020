@@ -3,37 +3,23 @@
 </template>
 
 <script>
-  /////////////
-  import gmapsInit from '/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/utils/gmaps.js';
+/////////////
+import gmapsInit from "/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/utils/gmaps.js";
 
-  export default {
-    name: 'map2',
-    async mounted() {
-      var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+export default {
+  name: "map",
+  async mounted() {
+    try {
+      const google = await gmapsInit();
 
-      mapboxgl.accessToken =
-        'pk.eyJ1Ijoiam9obnBmYW5ua3VjaGVuIiwiYSI6ImNrNzU2YjF2MTB2ZmEza3I5ZWI1em1veWoifQ.JzP8nbkHZg8SzFeC6U0mKQ';
-      var map = new mapboxgl.Map({
-        container: $this.$el,
-        style: 'mapbox://styles/mapbox/streets-v11'
+      const map = new google.maps.Map(this.$el, {
+        center: { lat: 42.058, lng: -76.3445 },
+        zoom: 17
       });
-    },
 
-    name: 'map',
-    async mounted() {
-      try {
-        const google = await gmapsInit();
+      //map.map
 
-        const map = new google.maps.Map(this.$el, {
-          center: { lat: 42.058, lng: -76.3445 },
-
-          address: '5 Locust St, Barton, NY 13734, USA',
-          zoom: 17
-        });
-
-        //map.map
-
-        /*
+      /*
         const geocoder = new google.maps.Geocoder();
         const map = new google.maps.Map(this.$el);
 
@@ -50,11 +36,11 @@
 
         );
         */
-      } catch (error) {
-        console.error(error);
-      }
+    } catch (error) {
+      console.error(error);
     }
-  };
+  }
+};
 </script>
 
 <style></style>

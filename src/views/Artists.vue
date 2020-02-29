@@ -1,37 +1,8 @@
 <template>
   <div>
-    <div v-for="artist in schedule">
-      <h2>{{artist.artist}}</h2>
-      <h2>{{artist.day}}</h2>
-      <h2>{{artist.time}}</h2>
-      <h2>{{artist.stage}}</h2>
-    </div>
+    <artist-card></artist-card>
   </div>
 </template>
 
 <script>
-import schedule from "../assets/data/schedule";
-export default { schedule };
-////////////////////////////////////
-/*
-
-<div v-for="todo in todos"></div>
-day = "SATURDAY";
-markup += `
-    <div class = "row">
-    <div class="col-1-of-2">
-    <h1>${day}</h1>`;
-schedule.forEach((cur, i, arr) => {
-  if (schedule[i].day == day) {
-    markup += `
-      <div class="schedule">
-        <h2>${schedule[i].artist}</h2>
-        <h3>${schedule[i].time}pm [${schedule[i].day}]</h3>
-        <h6>Performing at the ${schedule[i].stage}</h6>
-      </div>
-      `;
-  }
-});
-markup += `</div></div>`;
-*/
 </script>

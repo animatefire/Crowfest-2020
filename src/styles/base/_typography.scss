@@ -1,5 +1,5 @@
-$paragraph: Lato, sans-serif;
-$header: 'Girassol', serif;
+$paragraph: 'Special Elite', serif;
+$header: 'Nothing You Could Do', serif;
 $sub-header: 'Nothing You Could Do', sans-serif;
 
 p {
@@ -25,20 +25,24 @@ p {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   color: $color-secondary;
   font-family: $header;
+  line-height: 0.9;
+  padding-top: 1.6rem;
 }
 
 h2 {
   font-size: 2.2rem;
   //color: $color-blue;
-  font-family: $sub-header;
+  font-family: $header;
+  line-height: inherit;
 }
 
 h3 {
   font-size: 1.8rem;
   //color: $color-orange;
+  font-family: $sub-header;
 }
 
 h4 {
@@ -58,4 +62,5 @@ h5,
 h6 {
   text-transform: uppercase;
   //color: $color-red;
+  font-family: $paragraph;
 }
