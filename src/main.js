@@ -16,21 +16,7 @@ import googleMap from './components/Map.vue';
 // Components Registration
 Vue.component('navigation', navigation);
 Vue.component('foot', foot);
-Vue.component('artist-card', {
-  data: function() {
-    return { schedule };
-  },
-  template: `
-  <div>
-    <div v-for="(artist, i) in schedule">
-      <h1> {{schedule[i].artist}} </h1>
-      <h2>{{schedule[i].day}}</h2>
-      <h3>{{schedule[i].time}}</h3>
-      <h4>{{schedule[i].stage}}</h4>
-    </div>
-  </div>
-  `
-});
+Vue.component('artist-card', artistCard);
 Vue.component('google-map', googleMap);
 
 // View Imports
@@ -53,7 +39,7 @@ Vue.component('camping', Camping);
 const routes = [
   { path: '/', component: Home },
   { path: '/artists', component: Artists },
-  { path: '/tickets', component: Tickets },
+  { path: '/tickets', component: Artists },
   { path: '/location', component: Location },
   { path: '/camping', component: Camping },
   { path: '/about', component: About }

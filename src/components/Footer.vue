@@ -1,9 +1,24 @@
 <template>
   <footer class="footer">
-    <a href="" class="link">Link 1</a>
-    <a href="" class="link">Link 2</a>
-    <a href="" class="link">Link 3</a>
-    <a href="" class="link">Link 4</a>
-    <a href="" class="link">Link 5</a>
+    <div class="row">
+      <div class="col-1-of-3">
+        <ul>
+          <li>
+            <p>607-798-0264</p>
+          </li>
+          <li>
+            <p>info@crowfest.org</p>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/CrowfestNY/" class="link">
+              <p>Facebook</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </template>
+
+<style lang="scss">
+</style>
