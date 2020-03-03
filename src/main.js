@@ -1,5 +1,4 @@
 import './styles/style.scss';
-import schedule from './assets/data/schedule';
 import '/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/img/background.jpg';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
