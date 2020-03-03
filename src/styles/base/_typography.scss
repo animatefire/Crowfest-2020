@@ -1,0 +1,66 @@
+$paragraph: 'Special Elite', serif;
+$header: 'Nothing You Could Do', serif;
+$sub-header: 'Nothing You Could Do', sans-serif;
+
+p {
+  font-size: 1.6rem;
+  max-width: 38rem;
+  text-align: left-justify;
+  font-family: $paragraph;
+}
+
+a {
+  font-family: $paragraph;
+  color: $color-secondary;
+  &:hover {
+    color: $color-secondary;
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+  //color: $color-red;
+}
+
+h1 {
+  font-size: 3.8rem;
+  color: $color-secondary;
+  font-family: $header;
+  line-height: 0.9;
+  padding-top: 1.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  //color: $color-blue;
+  font-family: $header;
+  line-height: inherit;
+}
+
+h3 {
+  font-size: 1.8rem;
+  //color: $color-orange;
+  font-family: $sub-header;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  //color: $color-red;
+  font-family: $paragraph;
+}

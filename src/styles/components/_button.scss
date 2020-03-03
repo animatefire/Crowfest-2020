@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 7rem;
+  transition: all 0.3s;
+  font-size: 1.6rem;
+
+  &--color-primary {
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+
+  &--center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  //&::visited{}
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover {
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,8 +1,10 @@
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',
   devtool: 'inline-source-map',
+  //runtimeCompiler: true,
   devServer: {
     contentBase: './dist'
   },
@@ -10,12 +12,24 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm.js'
+    },
+    extensions: ['*', '.js', '.vue', '.json']
+  },
   mode: 'development',
+
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [
+          'vue-style-loader',
           // Creates `style` nodes from JS strings
           'style-loader',
           // Translates CSS into CommonJS
@@ -33,5 +47,6 @@ module.exports = {
         loader: 'html-loader'
       }
     ]
-  }
+  },
+  plugins: [new VueLoaderPlugin()]
 };
