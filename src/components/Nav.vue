@@ -1,9 +1,8 @@
 <template>
   <nav class="header__nav">
     <a href="/">
-      <img class="header__logo" src="img/crow-silhouette-freesvg.org.svg" />
+      <img :src="`${logo}`" class="header__logo nav__link" />
     </a>
-    <a href="tickets.html" class="nav__link">Tickets</a>
     <router-link to="/tickets">Tickets</router-link>
     <router-link to="/location">Location</router-link>
     <router-link to="/artists">Artists</router-link>
@@ -11,3 +10,21 @@
     <router-link to="/about">About</router-link>
   </nav>
 </template>
+
+<script>
+  import logo from '../assets/icons/crow.svg';
+  export default {
+    data() {
+      return {
+        logo
+      };
+    }
+  };
+</script>
+
+<style scoped lang="scss">
+  .header__logo {
+    display: inline-block;
+    height: 3rem;
+  }
+</style>
