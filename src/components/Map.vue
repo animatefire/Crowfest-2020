@@ -3,23 +3,23 @@
 </template>
 
 <script>
-/////////////
-import gmapsInit from "/Users/johnpfannkuchen/Documents/Development/crowfest2020/src/assets/utils/gmaps.js";
+  /////////////
+  import gmapsInit from '../assets/utils/gmaps';
 
-export default {
-  name: "map",
-  async mounted() {
-    try {
-      const google = await gmapsInit();
+  export default {
+    name: 'map',
+    async mounted() {
+      try {
+        const google = await gmapsInit();
 
-      const map = new google.maps.Map(this.$el, {
-        center: { lat: 42.058, lng: -76.3445 },
-        zoom: 17
-      });
+        const map = new google.maps.Map(this.$el, {
+          center: { lat: 42.058, lng: -76.3445 },
+          zoom: 17
+        });
 
-      //map.map
+        //map.map
 
-      /*
+        /*
         const geocoder = new google.maps.Geocoder();
         const map = new google.maps.Map(this.$el);
 
@@ -36,11 +36,11 @@ export default {
 
         );
         */
-    } catch (error) {
-      console.error(error);
+      } catch (error) {
+        console.error(error);
+      }
     }
-  }
-};
+  };
 </script>
 
 <style></style>

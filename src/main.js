@@ -38,7 +38,7 @@ Vue.component('camping', Camping);
 const routes = [
   { path: '/', component: Home },
   { path: '/artists', component: Artists },
-  { path: '/tickets', component: Artists },
+  { path: '/tickets', component: Tickets },
   { path: '/location', component: Location },
   { path: '/camping', component: Camping },
   { path: '/about', component: About }
