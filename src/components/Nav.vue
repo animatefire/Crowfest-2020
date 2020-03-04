@@ -3,7 +3,7 @@
     <a href="/">
       <img :src="`${logo}`" class="header__logo nav__link" />
     </a>
-    <router-link to="/tickets">Tickets</router-link>
+    <!--<router-link to="/tickets">Tickets</router-link>-->
     <router-link to="/location">Location</router-link>
     <router-link to="/artists">Artists</router-link>
     <router-link to="/camping">Camping</router-link>
