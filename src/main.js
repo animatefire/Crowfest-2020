@@ -10,12 +10,14 @@ import navigation from './components/Nav.vue';
 import foot from './components/Footer.vue';
 import artistCard from './components/artistCard.vue';
 import googleMap from './components/Map.vue';
+import ticketButton from './components/ticketButton.vue';
 
 // Components Registration
 Vue.component('navigation', navigation);
 Vue.component('foot', foot);
 Vue.component('artist-card', artistCard);
 Vue.component('google-map', googleMap);
+Vue.component('ticket-button', ticketButton);
 
 // View Imports
 import Home from './views/Home.vue';

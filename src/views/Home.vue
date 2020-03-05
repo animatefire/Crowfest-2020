@@ -1,33 +1,34 @@
 <template>
-  <header class="header">
-    <button
-      class="btn btn--color-primary btn--center"
-      id="eventbrite-widget-modal-trigger-92799043437"
-      type="button"
-    >
-      Get Tickets Now
-    </button>
+  <header
+    :style="{
+      backgroundImage: `url('${schedule[x].img}')`
+    }"
+    class="header"
+  >
+    <div class="screen">
+      <h1 class="title">{{ title }}</h1>
+
+      <ticket-button />
+    </div>
   </header>
 </template>
 
 <script>
-  import eventbrite from '../assets/utils/eventbrite';
-  var exampleCallback = function() {
-    console.log('Order complete!');
-  };
-
-  window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: '92799043437',
-    modal: true,
-    modalTriggerElementId: 'eventbrite-widget-modal-trigger-92799043437',
-    onOrderComplete: exampleCallback
-  });
-
+  import schedule from '../assets/data/schedule';
+  const x = Math.floor(Math.random() * schedule.length);
+  const title = 'Crowfest2020';
   export default {
+    data() {
+      return {
+        schedule,
+        title,
+        x
+      };
+    }
+
+    /*,
     computed: {
       username() {
-        // We will see what `params` is shortly
         return this.$route.params.username;
       }
     },
@@ -37,6 +38,29 @@
           ? this.$router.go(-1)
           : this.$router.push('/');
       }
-    }
+    }*/
   };
 </script>
+
+<style scoped lang="scss">
+  .header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+  }
+
+  .screen {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    padding: 1em;
+  }
+</style>
