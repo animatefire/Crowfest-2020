@@ -1,37 +1,28 @@
 .btn {
+  //normal state
   border: none;
   text-transform: uppercase;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
   transition: all 0.3s;
   font-size: 1.6rem;
   font-family: $sub-header;
+  display: inline-block;
+  @include color-primary;
 
   &--rounded {
+    border-radius: 0.5rem;
   }
-
-  &--color-primary {
-    background-color: $color-primary;
-    color: $color-secondary;
-  }
-
-  &--center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  //&::visited{}
 
   &:active {
-    //transform: translateY(1px);
+    transform: translateY(1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    @include color-secondary;
   }
 
   &:hover {
-    //transform: translateY(0.1px);
+    transform: translateY(0.1px);
     transform: scale(1.1);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    @include color-secondary;
   }
 }
