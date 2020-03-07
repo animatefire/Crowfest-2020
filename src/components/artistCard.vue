@@ -1,19 +1,25 @@
 <template>
   <div id="background" :style="{ backgroundImage: `url('${schedule[hover].img}')`}">
     <div class="screen">
-      <div
-        v-for="(artist, i) in schedule"
-        @mouseover="hover = i"
-        :id="`${schedule[i].img}`"
-        :class="artist"
-        :key="`artist-${i}`"
-      >
-        <h2>{{ schedule[i].artist }}</h2>
-        <h4>{{ schedule[i].day }}</h4>
-        <p>
-          <strong>{{ schedule[i].time }}</strong>
-          <em>{{ schedule[i].stage }}</em>
-        </p>
+      <div class="poster-header">
+        <h1>Crowfest 2020</h1>
+      </div>
+      <div class="artists">
+        <div
+          v-for="(artist, i) in schedule"
+          @mouseover="hover = i"
+          :class="artist"
+          :key="`artist-${i}`"
+          :alt="artist"
+        >
+          <p>
+            <span class="schedule-artist">{{ schedule[i].artist }}</span>
+            <br />
+            <span class="schedule-day">{{ schedule[i].day }}</span>/
+            <span class="schedule-time">{{ schedule[i].time }}</span>/
+            <span class="schedule-stage">{{ schedule[i].stage }}</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -34,43 +40,41 @@ export default {
 
 <style scoped lang="scss">
 #background {
-  display: flex;
-  flex-flow: row wrap;
   transition: all 0.5s ease;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.poster-header {
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
 }
 
 .screen {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
+}
+
+.artists {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .artist {
-  text-align: center;
-  max-width: 50rem;
+  margin-top: 1rem;
   transition: all 0.5s ease;
-  //display: inline-block;
-  line-height: 2rem;
-  flex: 0 1 auto;
-
-  /*
-  activeClass {
-    transform: scale(2);
-    position: absolute;
-    transform-origin: center;
-    top: 50%;
-    left: 50%;
-  }
-  */
+  flex: 1 0 auto;
 
   &:hover {
     transform: scale(1.4);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    //@include color-secondary;
   }
 }
 
@@ -81,5 +85,29 @@ h4,
 h5,
 p {
   color: hsl(20, 20, 85);
+}
+
+span {
+  font-family: "open sans", sans-serif;
+}
+
+.schedule-artist {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+//.schedule-day {}
+//.schedule-time {}
+
+@media screen and (min-width: 40rem) {
+  .screen {
+    padding: 4rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  .schedule-artist {
+    font-size: 2.5rem;
+  }
 }
 </style>
