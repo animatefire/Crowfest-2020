@@ -1,8 +1,3 @@
 <template>
-  <div>
-    <artist-card></artist-card>
-  </div>
+  <artist-card />
 </template>
-
-<script>
-</script>
