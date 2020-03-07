@@ -74,7 +74,7 @@ h1 {
   flex: 1 0 auto;
 
   &:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
   }
 }
 
@@ -108,6 +108,11 @@ span {
   }
   .schedule-artist {
     font-size: 2.5rem;
+  }
+  .artist {
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 }
 </style>
