@@ -2,15 +2,20 @@
   //normal state
   border: none;
   text-transform: uppercase;
-  padding: 1.5rem 3rem;
+  padding: 1.25rem 3rem;
   transition: all 0.3s;
   font-size: 1.6rem;
   font-family: $sub-header;
+  font-weight: 300;
   display: inline-block;
-  @include color-primary;
+  @include color-accent;
+
+  &--bordered {
+    border: 0.15rem solid $color-accent;
+  }
 
   &--rounded {
-    border-radius: 0.5rem;
+    border-radius: 2.5rem;
   }
 
   &:active {

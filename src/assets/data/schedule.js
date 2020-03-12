@@ -35,7 +35,7 @@ const schedule = [
   {
     day: 'FRIDAY',
     time: '7:00-7:30',
-    artist: 'Tim Ruffo [with special guest Michaela Clark]',
+    artist: 'Tim Ruffo with Michaela Clark',
     stage: 'Side Stage',
     img: timRuffo
   },

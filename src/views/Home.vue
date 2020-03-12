@@ -3,7 +3,11 @@
       backgroundImage: `url('${schedule[x].img}')`
     }" class="header">
     <div class="screen">
-      <h1 class="title">{{ title }}</h1>
+      <h1>
+        <span class="title">June 20-21 2020</span>
+
+        <span class="subtitle">Ransom Park Tioga Center, NY</span>
+      </h1>
       <ticket-button />
     </div>
   </header>
@@ -12,12 +16,12 @@
 <script>
 import schedule from "../assets/data/schedule";
 const x = Math.floor(Math.random() * schedule.length);
-const title = "Crowfest2020";
+//const title = "June 20-21 2020";
 export default {
   data() {
     return {
       schedule,
-      title,
+      //title,
       x
     };
   }
@@ -31,11 +35,24 @@ export default {
   height: 100vh;
   position: relative;
   text-align: center;
+  //display: flex;
+}
+
+span {
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+  line-height: 4rem;
+  color: #eee;
 }
 
 .title {
-  display: block;
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 1.6rem;
 }
 
 .screen {
@@ -45,6 +62,6 @@ export default {
 }
 
 .btn {
-  margin-top: 18rem;
+  margin-top: 10rem;
 }
 </style>

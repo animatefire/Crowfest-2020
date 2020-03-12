@@ -1,12 +1,19 @@
 $slow: 1.75s;
 $fast: 0.75s;
 
+a:hover {
+  color: $color-secondary;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .content {
   animation: transitionIn $slow, slideIn $fast;
 }
 
-.schedule {
-  animation: transitionIn $slow, slideIn $slow;
+.artist {
+  animation: transitionIn $slow;
 }
 
 //.content--left {}

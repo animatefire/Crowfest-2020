@@ -1,9 +1,8 @@
 <template>
   <div id="background" :style="{ backgroundImage: `url('${schedule[hover].img}')`}">
     <div class="screen">
-      <div class="poster-header">
-        <h1>Crowfest 2020</h1>
-      </div>
+      <logo class="poster-header" />
+
       <div class="artists">
         <div
           v-for="(artist, i) in schedule"
@@ -31,7 +30,7 @@ export default {
   data() {
     return {
       schedule,
-      hover: 1,
+      hover: 3,
       isActive: false
     };
   }
@@ -49,6 +48,10 @@ export default {
 .poster-header {
   padding: 1rem;
   margin-bottom: 3rem;
+  width: 75vw;
+  margin: 0 auto;
+  height: auto;
+  fill: #eee;
 }
 
 h1 {
@@ -75,29 +78,22 @@ h1 {
 
   &:hover {
     transform: scale(1.1);
+    transform: translateX(2rem);
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  color: hsl(20, 20, 85);
-}
-
-span {
-  font-family: "open sans", sans-serif;
-}
-
 .schedule-artist {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 //.schedule-day {}
 //.schedule-time {}
+
+.schedule-artist {
+  transform: translateX(2rem);
+}
 
 @media screen and (min-width: 40rem) {
   .screen {
@@ -115,4 +111,18 @@ span {
     }
   }
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: hsl(20, 20, 85);
+}
+
+span {
+  font-family: "open sans", sans-serif;
+}
 </style>
+

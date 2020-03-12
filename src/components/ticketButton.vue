@@ -1,9 +1,9 @@
 <template>
   <button
-    class="btn btn--color-primary btn--center btn--rounded"
+    class="btn btn--color-primary btn--center btn--rounded btn--bordered"
     id="eventbrite-widget-modal-trigger-92799043437"
     type="button"
-  >Tickets</button>
+  >Get Tickets</button>
 </template>
 
 <script>

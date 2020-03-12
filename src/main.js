@@ -11,6 +11,7 @@ import foot from './components/Footer.vue';
 import artistCard from './components/artistCard.vue';
 import googleMap from './components/Map.vue';
 import ticketButton from './components/ticketButton.vue';
+import logo from './components/Logo.vue';
 
 // Components Registration
 Vue.component('navigation', navigation);
@@ -18,6 +19,7 @@ Vue.component('foot', foot);
 Vue.component('artist-card', artistCard);
 Vue.component('google-map', googleMap);
 Vue.component('ticket-button', ticketButton);
+Vue.component('logo', logo);
 
 // View Imports
 import Home from './views/Home.vue';

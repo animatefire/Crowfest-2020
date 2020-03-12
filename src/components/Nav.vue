@@ -1,7 +1,8 @@
 <template>
   <nav class="header__nav">
     <a href="/">
-      <img :src="`${logo}`" class="header__logo nav__link" />
+      <logo class="header__logo" />
+      <!--<img :src="`${logo}`" class="header__logo nav__link" />-->
     </a>
     <!--<router-link to="/tickets">Tickets</router-link>-->
     <div class="nav-links">
@@ -14,11 +15,12 @@
 </template>
 
 <script>
-import logo from "../assets/icons/crow.svg";
+//import logo from "../assets/icons/crow.svg";
+
 export default {
   data() {
     return {
-      logo
+      //logo
     };
   }
 };
@@ -30,7 +32,7 @@ nav {
   justify-content: space-between;
   flex-flow: row nowrap;
   align-items: center;
-  height: 5rem;
+  height: 10rem;
 }
 
 .nav-links {
@@ -39,15 +41,16 @@ nav {
 
 .header__logo {
   height: 3rem;
+  width: auto;
+  display: flex;
+  fill: #eee;
 }
 
 .header__nav {
-  //background-color: $color-red;
-
   a {
     text-decoration: none;
-    font-size: 1.5rem;
-    padding: 0 1rem;
+    font-size: 1.3rem;
+    padding: 0 0.6rem;
   }
 }
 </style>

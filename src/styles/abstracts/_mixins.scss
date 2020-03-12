@@ -16,6 +16,11 @@
   color: $color-primary;
 }
 
+@mixin color-accent {
+  background-color: $color-primary;
+  color: $color-accent;
+}
+
 @mixin absolute-centered {
   position: absolute;
   top: 50%; /* position the top  edge of the element at the middle of the parent */
@@ -24,6 +29,5 @@
   transform: translate(
     -50%,
     -50%
-  ); /* This is a shorthand of
-                                       translateX(-50%) and translateY(-50%) */
+  ); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
 }
