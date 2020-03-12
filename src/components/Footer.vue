@@ -44,5 +44,15 @@ a {
 
 .footer-links {
   display: flex;
+  &__ul {
+    list-style-type: none;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 </style>

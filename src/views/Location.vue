@@ -20,7 +20,7 @@ iframe,
 }
 
 .location__info {
-  height: 50vh;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 400px) {

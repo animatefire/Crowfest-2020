@@ -46,10 +46,11 @@ export default {
 }
 
 .poster-header {
-  padding: 1rem;
-  margin-bottom: 3rem;
+  //Positioning
+
+  //////////
+  //margin-bottom: 3rem;
   width: 75vw;
-  margin: 0 auto;
   height: auto;
   fill: #eee;
 }
@@ -60,6 +61,9 @@ h1 {
 }
 
 .screen {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   width: 100%;
@@ -96,6 +100,10 @@ h1 {
 }
 
 @media screen and (min-width: 40rem) {
+  .poster-header {
+    width: 50vw;
+  }
+
   .screen {
     padding: 4rem;
   }
@@ -110,19 +118,6 @@ h1 {
       transform: scale(1.15);
     }
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  color: hsl(20, 20, 85);
-}
-
-span {
-  font-family: "open sans", sans-serif;
 }
 </style>
 

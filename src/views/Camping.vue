@@ -28,8 +28,9 @@
       rgba(0, 100, 200, 0.4),
       rgba(45, 100, 0, 0.4),
       rgba(255, 0, 150, 0.3)
-    ),
-    url(/img/artists/fireside.jpg);
+    )
+    /*,
+    url(/img/artists/fireside.jpg)*/;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1em;

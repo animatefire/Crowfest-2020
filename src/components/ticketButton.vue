@@ -26,4 +26,4 @@ export default {
   checkout
 };
 </script>
-<style scoped lang="scss"></style>
+

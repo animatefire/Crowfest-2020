@@ -1,22 +1,2 @@
 .footer {
-  //grid-area: footer;
-  min-height: 3rem;
-  text-decoration: none;
-  background-color: $color-primary;
-  padding: 0.5rem;
-  p {
-    font-size: 0.8rem;
-    color: $color-accent;
-  }
-
-  &__ul {
-    list-style-type: none;
-  }
-
-  li {
-    font-size: 1.2rem;
-  }
-  a {
-    text-decoration: none;
-  }
 }
