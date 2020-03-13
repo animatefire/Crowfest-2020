@@ -16,6 +16,8 @@ import underTheRug from '../img/artists/under_the_rug.jpg';
 import woodshedProphets from '../img/artists/woodshed_prophets.jpg';
 import randyMcstine from '../img/artists/randy_mcstine.jpg';
 import bootknife from '../img/artists/bootknife.jpg';
+import tim_ruffo from '../img/artists/tim_ruffo.jpg';
+import marty from '../img/artists/marty.png';
 
 const schedule = [
   {
@@ -49,9 +51,9 @@ const schedule = [
   {
     day: 'FRIDAY',
     time: '8:30-9:00',
-    artist: 'Marty ',
+    artist: 'Marty and Jen',
     stage: 'Side Stage',
-    img: fireSide2
+    img: marty
   },
   {
     day: 'FRIDAY',
@@ -77,7 +79,7 @@ const schedule = [
   {
     day: 'SATURDAY',
     time: '1:00-1:15',
-    artist: 'George Gleason',
+    artist: 'Barleywine',
     stage: 'Side stage',
     img: fireSide2
   },
@@ -105,7 +107,7 @@ const schedule = [
   {
     day: 'SATURDAY',
     time: '3:30-3:45',
-    artist: 'Chris Ruffo',
+    artist: 'Chris and Corey Ruffo',
     stage: 'Side stage',
     img: fireSide2
   },
@@ -135,7 +137,7 @@ const schedule = [
     time: '6:00-6:15',
     artist: 'Tim Ruffo',
     stage: 'Side stage',
-    img: fireSide2
+    img: tim_ruffo
   },
   {
     day: 'SATURDAY',

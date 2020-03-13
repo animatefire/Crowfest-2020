@@ -4,18 +4,23 @@
       backgroundImage: `url('${schedule[x].img}')`
     }">
       <div class="screen">
+        <logo class="logo" />
         <h1>
-          <span class="title">June 20-21 2020</span>
+          <span class="title">June 12-13 2020</span>
 
-          <span class="subtitle">Ransom Park Tioga Center, NY</span>
+          <a href="#/location">
+            <span class="subtitle">Ransom Park Tioga Center, NY</span>
+          </a>
         </h1>
+        <ticket-button />
       </div>
     </header>
-    <ticket-button />
+    <!--
     <artists />
     <location />
     <camping />
     <about />
+    -->
   </div>
 </template>
 
@@ -35,6 +40,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.logo {
+  fill: #eee;
+  height: 20rem;
+  max-width: 80vw;
+  //margin-bottom: -7rem;
+  //margin-top: -5rem;
+}
+
 .header {
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,20 +59,13 @@ export default {
 span {
   text-transform: uppercase;
   text-align: left;
-  display: block;
+  display: inline-block;
   line-height: 4rem;
   color: #eee;
 }
 
-h1 {
-  //position: absolute;
-  //top: 60vh;
-  //left: 30vw;
-  //transform: translate(-50%, -50%);
-}
-
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 .subtitle {
@@ -74,9 +80,9 @@ h1 {
 }
 
 .btn {
-  position: absolute;
-  top: 70vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: inline-block;
+  //top: 70vh;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
 }
 </style>

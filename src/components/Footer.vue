@@ -21,7 +21,7 @@
 
 <style scoped lang="scss">
 .footer {
-  height: 15rem;
+  //height: 15rem;
   padding: 2rem;
   max-height: 33vh;
 
@@ -32,18 +32,19 @@
 }
 p {
   font-size: 1.1rem;
+  line-height: 1rem;
+}
+
+h5 {
+  margin-bottom: 1rem;
 }
 
 ul {
   list-style: none;
 }
 
-a {
-  line-height: 2rem;
-}
-
 .footer-links {
-  display: flex;
+  //display: flex;
   &__ul {
     list-style-type: none;
   }
