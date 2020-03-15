@@ -53,4 +53,16 @@ nav {
     padding: 0 0.6rem;
   }
 }
+
+@media screen and (min-width: 36rem) {
+  .header__logo {
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .header__logo {
+    height: 8rem;
+  }
+}
 </style>

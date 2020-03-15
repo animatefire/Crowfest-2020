@@ -11,7 +11,7 @@
         </li>
         <li>
           <a href="https://www.facebook.com/CrowfestNY/" class="link">
-            <p>Facebook</p>
+            <facebook-icon class="icon" />
           </a>
         </li>
       </ul>
@@ -33,6 +33,10 @@
 p {
   font-size: 1.1rem;
   line-height: 1rem;
+}
+
+.icon {
+  height: 1.6rem;
 }
 
 h5 {

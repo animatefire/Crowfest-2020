@@ -14,6 +14,14 @@ import ticketButton from './components/ticketButton.vue';
 import logo from './components/Logo.vue';
 import scheduleCard from './components/ScheduleCard.vue';
 
+import facebookIcon from './components/icons/facebook__icon.vue';
+import instagramIcon from './components/icons/instagram__icon.vue';
+import youtubeIcon from './components/icons/youtube__icon.vue';
+import musicIcon from './components/icons/music__icon.vue';
+import spotifyIcon from './components/icons/spotify__icon.vue';
+import twitterIcon from './components/icons/twitter__icon.vue';
+import websiteIcon from './components/icons/website__icon.vue';
+
 // Components Registration
 Vue.component('navigation', navigation);
 Vue.component('foot', foot);
@@ -22,6 +30,13 @@ Vue.component('google-map', googleMap);
 Vue.component('ticket-button', ticketButton);
 Vue.component('logo', logo);
 Vue.component('scheduleCard', scheduleCard);
+Vue.component('facebook-icon', facebookIcon);
+Vue.component('instagram-icon', instagramIcon);
+Vue.component('youtube-icon', youtubeIcon);
+Vue.component('spotify-icon', spotifyIcon);
+Vue.component('music-icon', musicIcon);
+Vue.component('twitter-icon', twitterIcon);
+Vue.component('website-icon', websiteIcon);
 
 // View Imports
 import Home from './views/Home.vue';

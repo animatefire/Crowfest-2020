@@ -34,9 +34,17 @@ const schedule = [
   {
     day: 'FRIDAY',
     time: '6:00-7:00',
-    artist: 'Uncle Uku and The Guise',
+    artist: 'Uncle Uku & The Guise',
     stage: 'Main Stage',
-    img: uncleUku
+    img: uncleUku,
+    member:
+      'Troy Abbott – Lead vocals, Ukulele Roscoe Hafler – Guitar, Background Vocals Chris Howard - Drums Seth Quinones– Percussion, Background Vocals Josh Wray - Bass',
+    bio:
+      'It takes a big person to play a tiny ukulele in a rock band. From Corning, Uncle Uku &amp; The Guise is for all intents and purposes a rock band that seems to have harvested its beguiling tunes from a genre it seems to be the only member of. Uncle Uku comforts and guides your soul with his cosmic mastery of the vocal-ukelelean arts, whilst the Guise bring you back in sync with the passion and sexuality of your primordial being.',
+    youtube: 'https://youtu.be/jWugexHIU54',
+    music: 'https://soundcloud.com/uncleuku',
+    website:
+      'http://uncleukuandtheguise.secureserversites.net/?fbclid=IwAR3XKzIcQGPGC2VTgNRKR6qZ63SXAhxYd_GfozpbwgFa_Jx3Ym6CSZlTsmA'
   },
   {
     day: 'FRIDAY',
@@ -223,14 +231,28 @@ const schedule = [
     time: '6:15-7:15',
     artist: 'Woodshed Prophets',
     stage: 'Main stage',
-    img: woodshedProphets
+    img: woodshedProphets,
+    members:
+      'Rob Stachyra - lead guitar, vocals / Dan Hardy - guitar, vocals / Ed Gliha - bass, vocals / Dan “Bird-Dog” Dunham - drums, vocals',
+    bio:
+      'Hailing from Sidney, NY, the Woodshed Prophets are a quartet of bearded wild men, hell-bent on world domination or self-destruction, whichever comes first. The Prophets primarily play original material, a unique blend of rock and country (or “power twang” as they’ve been tagged by friends and fans). Their second studio album, Nowhere But Down, was released in September 2013.',
+    facebook: 'http://facebook.com/woodshedprophets',
+    twitter: 'http://twitter.com/woodshedprophet',
+    website: 'http://woodshedprophets.com'
   },
   {
     day: 'SATURDAY',
     time: '7:15-7:45',
     artist: 'Under the Rug',
     stage: 'Side stage',
-    img: underTheRug
+    img: underTheRug,
+    members:
+      'Jaime Renfro (Vocals, Guitar, Drums), Jonathan Oxx (Lead Guitar, Vocals)',
+    bio:
+      'Jon and Jaime play a unique brand of original music that teeters between dark alternative and blues guitar rock. They also cover material that spans the last five decades. There’s plenty of energy and enthusiasm in every performance. Influences included Deftones, Black Keys, Queen, The Beatles, Gary Clark Jr, and many more.',
+    youtube: 'https://youtu.be/Q6miID51EAI',
+    facebook:
+      'https://www.facebook.com/Under-The-Rug-862098820564148/?hc_ref=ARQFyq7A5TR2SNtV-EbEQS7A-mKP_1Fhvexl0I1fpE-1AJ80iLmerWx_xQ6CM2_5w0s&ref=nf_target&__xts__[0]=68.ARCLEGaExSH1bKsDOEPrirOFgKBPFd5JdtN6RL5ZJolYO52GrcBB76FClHR2YHWcv4CmgZEMgZ5JczKUOTALdJ-99KWEoOQ4m8bOEignu1a4l9NlVtj5Me6zYg5iuZ-1OKBg9yOyxGKVDgHefGtAsqjZQsT3c5i9sejl6GyWN_8RMocPLrTSOamTywIYEPOijI-J2J3b1jVqDT0xC_0fKimMTvJPukcF_DBXLnZaaQ5NC0Q8zJYpkS5Z0j_Ai9jID2yQXGRXm_A&__tn__=kC-R'
   },
   {
     day: 'SATURDAY',
@@ -239,7 +261,7 @@ const schedule = [
     stage: 'Main stage',
     img: tijuanaDangerDogs,
     members: 'Jesse Wheeler, Caleb Wheeler, Keagan, Johnny Danger',
-    Website: tijuanadangerdogs.com,
+    Website: 'http://tijuanadangerdogs.com',
     music: 'tijuanadangerdogs.com/music',
     facebook: 'http://facebook.com/49dogs',
     instagram: 'https://www.instagram.com/tijuanadangerdogs/?hl=en',
