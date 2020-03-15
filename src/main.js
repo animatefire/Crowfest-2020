@@ -12,6 +12,7 @@ import artistCard from './components/artistCard.vue';
 import googleMap from './components/Map.vue';
 import ticketButton from './components/ticketButton.vue';
 import logo from './components/Logo.vue';
+import scheduleCard from './components/ScheduleCard.vue';
 
 // Components Registration
 Vue.component('navigation', navigation);
@@ -20,6 +21,7 @@ Vue.component('artist-card', artistCard);
 Vue.component('google-map', googleMap);
 Vue.component('ticket-button', ticketButton);
 Vue.component('logo', logo);
+Vue.component('scheduleCard', scheduleCard);
 
 // View Imports
 import Home from './views/Home.vue';
