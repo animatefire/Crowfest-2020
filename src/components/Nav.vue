@@ -53,20 +53,32 @@ nav {
 .header__nav {
   a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0 0.6rem;
   }
 }
 
-@media screen and (min-width: 36rem) {
+@media screen and (min-width: 35.9rem) {
   .header__logo {
     height: 6rem;
   }
+  .header__nav {
+    a {
+      font-size: 1.8rem;
+      padding: 0 0.8rem;
+    }
+  }
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 56rem) {
   .header__logo {
     height: 8rem;
+  }
+  .header__nav {
+    a {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
   }
 }
 </style>

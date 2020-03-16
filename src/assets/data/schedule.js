@@ -3,7 +3,7 @@ import fireSide2 from '../img/fire_side_2.jpg';
 import eagles from '../img/artists/eagles.jpg';
 import kevinDoupe from '../img/artists/kevin_doupe.jpg';
 import uncleUku from '../img/artists/uncle_uku.jpg';
-import timRuffo from '../img/artists/tim_ruffo.jpeg';
+import timRuffo from '../img/artists/tim_ruffo.jpg';
 import nextToKin from '../img/artists/next_to_kin.jpg';
 import smokinCrows from '../img/artists/smokin_crows.jpeg';
 import glenmarysGhost from '../img/artists/glenmarys_ghost.jpg';
@@ -16,7 +16,7 @@ import underTheRug from '../img/artists/under_the_rug.jpg';
 import woodshedProphets from '../img/artists/woodshed_prophets.jpg';
 import randyMcstine from '../img/artists/randy_mcstine.jpg';
 import bootknife from '../img/artists/bootknife.jpg';
-import tim_ruffo from '../img/artists/tim_ruffo.jpg';
+//import timRuffo from '../img/artists/tim_ruffo.jpg';
 import marty from '../img/artists/marty.png';
 
 const schedule = [
@@ -226,7 +226,20 @@ const schedule = [
     time: '6:00-6:15',
     artist: 'Tim Ruffo',
     stage: 'Side stage',
-    img: tim_ruffo
+    img: timRuffo,
+    members: 'Tim Ruffo',
+    bio:
+      'From outlaw country to Pink Floyd, Tim Ruffos wide range of influences creates a sound that is uniquely his own. Tim grew up listening to his mother play guitar and sing old country songs around a campfire. Those songs gave him his exposure to music as an outlet and expression of life, whether it is during hard times or times to party hard. At just 16 years old, Tim left home and joined the Air Force. His travels took him all over the country – even up to Alaska. On the road, he met new friends and listened to the stories of the real people he met along the way - wealthy, poor, young, old, those with high hopes and those who had been beaten down by life. All of those stories memories have become part of the music he writes and plays today. Tim’s main influences are Outlaw Country icons Waylon Jennings and Johnny Cash who mastered the art of sharing tales of underdogs and tough times.',
+    bioB:
+      'But Ruffo has another, more raucous and rocking side, too, inspired by artists including Pink Floyd, Johnny Winter, and the Rolling Stones. After recording his first solo album, “Take Me Away” in 2011, Tim played shows all over New York and Pennsylvania as a solo artist and with the Tim Ruffo Band and The Ruffo Brothers. Two years later he released “Long Long Day,” with songs paying tribute to hard work, old friends, lost love, survival, and hope. His third album, MDO, featuring the songs “Told Ya,” “Livin Is Dyin,” “Katie Grace” and more was released in early 2017. Tim Ruffo has opened up for Gretchen Wilson, Eddie Money, and Joe Nichols as well as playing shows with Bloodshot artists The Deadstring Brothers and Whitey Morgan and the 78’s. Tim is always on the road, and these days he’s backed by his four-piece country rock band.',
+    bioC:
+      'A Tim Ruffo Band concert gets everyone up on their feet and dancing. Tim lives for his audience and bringing the crowd great stories wrapped in a good time. The love of live performing is what Tim Ruffo is all about.',
+    facebook: 'https://facebook.com/timruffomusic/',
+    instagram: 'https://instagram.com/timruffo/',
+    website: 'http://timruffomusic.com/',
+    youtube: 'https://youtube.com/channel/UCn_MdBaGoz75D69B4bmEw3w',
+    spotify: 'https://open.spotify.com/artist/6jng1MFjhWV8kGt8IJKeeD',
+    music: 'https://reverbnation.co'
   },
   {
     day: 'SATURDAY',

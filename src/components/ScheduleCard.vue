@@ -3,12 +3,11 @@
     <div class="screen">
       <logo class="poster-header" />
 
-      <div class="row">
+      <div>
         <div class="artists">
           <div
             v-for="(artist, i) in schedule"
             @mouseover="hover = i"
-            @click="active = true"
             :class="artist"
             :key="`artist-${i}`"
             :alt="artist"
@@ -18,12 +17,15 @@
                 <span class="schedule-artist">{{ artist.artist }}</span>
                 <br />
 
-                <span class="schedule-day">{{ artist.day }}</span>/
+                <span @click="billingSwitch('byDay')" class="schedule-day">{{ artist.day }}</span>/
                 <span class="schedule-time">{{ artist.time }}</span>/
-                <span class="schedule-stage">{{ artist.stage }}</span>
+                <span @click="billingSwitch('byStage')" class="schedule-stage">{{ artist.stage }}</span>
               </p>
 
-              <p>
+              <div
+                class="members-and-bio"
+                v-if="schedule[hover].members && schedule[hover].members == schedule[i].members"
+              >
                 <a :href="artist.website" target="_blank">
                   <website-icon v-if="artist.website" class="icon" />
                 </a>
@@ -45,14 +47,11 @@
                 <a :href="artist.spotify" target="_blank">
                   <spotify-icon v-if="artist.spotify" class="icon" />
                 </a>
-              </p>
-
-              <div
-                class="members-and-bio"
-                v-if="schedule[hover].members && schedule[hover].members == schedule[i].members"
-              >
                 <p>
-                  <span v-if="artist.quote" class="schedule-quote">{{artist.quote}}</span>
+                  <span v-if="artist.quote" class="schedule-quote">
+                    {{artist.quote}}
+                    <br />
+                  </span>
                   Members:
                   <span class="members">{{schedule[hover].members}}</span>
                   <br />
@@ -71,14 +70,38 @@
 
 <script>
 import schedule from "../assets/data/schedule.js";
+let byBilling = true;
+//let byDay = false;
+//let byStage = true;
+
+/*
+function billingSwitch(event) {
+  if (event == byBilling) {
+    byBilling = true;
+    byDay = false;
+    byStage = false;
+  } else if (event == byDay) {
+    byDay == true;
+    byBilling = false;
+    byStage = false;
+  } else {
+    byStage = true;
+    byDay = false;
+    byBilling = false;
+  }
+}
+*/
 export default {
   data() {
     return {
       schedule,
-      hover: 3,
-      active: false
+      hover: 0
+      //byBilling: true,
+      //byDay: false,
+      //byStage: false
     };
   }
+  //methods: { billingSwitch }
 };
 </script>
 
@@ -173,10 +196,10 @@ p {
     font-size: 2.5rem;
   }
 
-  .artist,
-  .members-and-bio {
+  .artist {
     &:hover {
       transform: scale(1.05) translateX(4rem);
+      margin: 2rem;
     }
   }
 }
