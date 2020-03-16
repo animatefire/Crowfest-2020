@@ -1,17 +1,21 @@
 <template>
-  <button
-    class="btn btn--color-primary btn--center btn--rounded btn--bordered"
-    id="eventbrite-widget-modal-trigger-92799043437"
-    type="button"
-  >Get Tickets</button>
+  <a href="https://www.eventbrite.com/e/crowfest-2020-tickets-92799043437#tickets">
+    <button
+      class="btn btn--color-primary btn--center btn--rounded btn--bordered"
+      id="eventbrite-widget-modal-trigger-92799043437"
+      type="button"
+    >Get Tickets</button>
+  </a>
 </template>
 
 <script>
-import eventbrite from "../assets/utils/eventbrite";
+/*
+//import eventbrite from "../assets/utils/eventbrite";
 
-const exampleCallback = function() {
-  console.log("Order complete!");
-};
+//const exampleCallback = function() {
+//  console.log("Order complete!");
+//};
+
 
 const checkout = window.EBWidgets.createWidget({
   widgetType: "checkout",
@@ -25,5 +29,6 @@ export default {
   eventbrite,
   checkout
 };
+*/
 </script>
 

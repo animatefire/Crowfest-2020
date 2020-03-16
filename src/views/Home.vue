@@ -15,7 +15,7 @@
         <ticket-button />
       </div>
     </header>
-    <scheduleCard />
+
     <!--
     <artists />
     <location />

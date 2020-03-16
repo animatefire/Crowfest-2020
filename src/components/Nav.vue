@@ -6,7 +6,11 @@
     </a>
     <!--<router-link to="/tickets">Tickets</router-link>-->
     <div class="nav-links">
-      <router-link to="/artists">Artists</router-link>
+      <a
+        target="_blank"
+        href="https://www.eventbrite.com/e/crowfest-2020-tickets-92799043437#tickets"
+      >Tickets</a>
+      <router-link to="/artists">Schedule</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/location">Location</router-link>
       <router-link to="/camping">Camping</router-link>

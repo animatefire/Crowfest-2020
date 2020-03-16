@@ -37,7 +37,7 @@ const schedule = [
     artist: 'Uncle Uku & The Guise',
     stage: 'Main Stage',
     img: uncleUku,
-    member:
+    members:
       'Troy Abbott – Lead vocals, Ukulele Roscoe Hafler – Guitar, Background Vocals Chris Howard - Drums Seth Quinones– Percussion, Background Vocals Josh Wray - Bass',
     bio:
       'It takes a big person to play a tiny ukulele in a rock band. From Corning, Uncle Uku &amp; The Guise is for all intents and purposes a rock band that seems to have harvested its beguiling tunes from a genre it seems to be the only member of. Uncle Uku comforts and guides your soul with his cosmic mastery of the vocal-ukelelean arts, whilst the Guise bring you back in sync with the passion and sexuality of your primordial being.',
@@ -52,15 +52,19 @@ const schedule = [
     artist: 'Tim Ruffo with Michaela Clark',
     stage: 'Side Stage',
     img: timRuffo,
-    members: 'Tim Ruffo',
+    members: 'Tim Ruffo, Michaela Clark',
     bio:
-      'From outlaw country to Pink Floyd, Tim Ruffo’s wide range of influences creates a sound that is uniquely his own. Tim grew up listening to his mother play guitar and sing old country songs around a campfire. Those songs gave him his exposure to music as an outlet and expression of life, whether it is during hard times or times to party hard. At just 16 years old, Tim left home and joined the Air Force. His travels took him all over the country – even up to Alaska. On the road, he met new friends and listened to the stories of the real people he met along the way - wealthy, poor, young, old, those with high hopes and those who had been beaten down by life. All of those stories memories have become part of the music he writes and plays today. Tim’s main influences are Outlaw Country icons Waylon Jennings and Johnny Cash who mastered the art of sharing tales of underdogs and tough times. But Ruffo has another, more raucous and rocking side, too, inspired by artists including Pink Floyd, Johnny Winter, and the Rolling Stones. After recording his first solo album, “Take Me Away” in 2011, Tim played shows all over New York and Pennsylvania as a solo artist and with the Tim Ruffo Band and The Ruffo Brothers. Two years later he released “Long Long Day,” with songs paying tribute to hard work, old friends, lost love, survival, and hope. His third album, MDO, featuring the songs “Told Ya,” “Livin Is Dyin,” “Katie Grace” and more was released in early 2017. Tim Ruffo has opened up for Gretchen Wilson, Eddie Money, and Joe Nichols as well as playing shows with Bloodshot artists The Deadstring Brothers and Whitey Morgan and the 78’s. Tim is always on the road, and these days he’s backed by his four-piece country rock band. A Tim Ruffo Band concert gets everyone up on their feet and dancing. Tim lives for his audience and bringing the crowd great stories wrapped in a good time. The love of live performing is what Tim Ruffo is all about.',
-    facebook: 'https://www.facebook.com/timruffomusic/',
-    instagram: 'https://www.instagram.com/timruffo/',
+      'From outlaw country to Pink Floyd, Tim Ruffos wide range of influences creates a sound that is uniquely his own. Tim grew up listening to his mother play guitar and sing old country songs around a campfire. Those songs gave him his exposure to music as an outlet and expression of life, whether it is during hard times or times to party hard. At just 16 years old, Tim left home and joined the Air Force. His travels took him all over the country – even up to Alaska. On the road, he met new friends and listened to the stories of the real people he met along the way - wealthy, poor, young, old, those with high hopes and those who had been beaten down by life. All of those stories memories have become part of the music he writes and plays today. Tim’s main influences are Outlaw Country icons Waylon Jennings and Johnny Cash who mastered the art of sharing tales of underdogs and tough times.',
+    bioB:
+      'But Ruffo has another, more raucous and rocking side, too, inspired by artists including Pink Floyd, Johnny Winter, and the Rolling Stones. After recording his first solo album, “Take Me Away” in 2011, Tim played shows all over New York and Pennsylvania as a solo artist and with the Tim Ruffo Band and The Ruffo Brothers. Two years later he released “Long Long Day,” with songs paying tribute to hard work, old friends, lost love, survival, and hope. His third album, MDO, featuring the songs “Told Ya,” “Livin Is Dyin,” “Katie Grace” and more was released in early 2017. Tim Ruffo has opened up for Gretchen Wilson, Eddie Money, and Joe Nichols as well as playing shows with Bloodshot artists The Deadstring Brothers and Whitey Morgan and the 78’s. Tim is always on the road, and these days he’s backed by his four-piece country rock band.',
+    bioC:
+      'A Tim Ruffo Band concert gets everyone up on their feet and dancing. Tim lives for his audience and bringing the crowd great stories wrapped in a good time. The love of live performing is what Tim Ruffo is all about.',
+    facebook: 'https://facebook.com/timruffomusic/',
+    instagram: 'https://instagram.com/timruffo/',
     website: 'http://timruffomusic.com/',
-    youtube: 'https://www.youtube.com/channel/UCn_MdBaGoz75D69B4bmEw3w',
+    youtube: 'https://youtube.com/channel/UCn_MdBaGoz75D69B4bmEw3w',
     spotify: 'https://open.spotify.com/artist/6jng1MFjhWV8kGt8IJKeeD',
-    music: 'https://www.reverbnation.co'
+    music: 'https://reverbnation.co'
   },
   {
     day: 'FRIDAY',
@@ -72,8 +76,8 @@ const schedule = [
       'Jason Porter – Lead Vocals, Guitar, Harmonica / Chip Beam – Bass / Vince DiRosa – Drums / Luke Foster – Lead Guitar',
     bio:
       'The Smokin’ Crows are a dirty blues-rock band originating in Binghamton, NY. The band’s influences range from North Mississippi Hill Country blues musicians to The Allman Brothers, Clutch, Led Zeppelin and many others. The band members’ wide ranging and unique influences can be heard throughout The Smokin’ Crows’ original tunes. The Smokin’ Crows released their debut album “Welcome to the Murder” in 2018.',
-    facebook: 'https://www.facebook.com/Thesmokincrowsny/',
-    youtube: 'https://www.youtube.com/channel/UCN_3pBbRT3cQZ5LArAIa85A'
+    facebook: 'https://facebook.com/Thesmokincrowsny/',
+    youtube: 'https://youtube.com/channel/UCN_3pBbRT3cQZ5LArAIa85A'
   },
   {
     day: 'FRIDAY',
@@ -106,9 +110,9 @@ const schedule = [
     artist: "Glenmary's Ghost",
     stage: 'Main stage',
     img: glenmarysGhost,
-    facebook: 'www.facebook.com/glenmarysghost',
-    instagram: 'www.instagram.com/glenmarysghost',
-    youtube: 'https://www.youtube.com/channel/UCkpz-xjwUByGROCBOZ0JOvw',
+    facebook: 'http://facebook.com/glenmarysghost',
+    instagram: 'http://instagram.com/glenmarysghost',
+    youtube: 'https://youtube.com/channel/UCkpz-xjwUByGROCBOZ0JOvw',
     music: 'https://glenmarysghost.bandcamp.com/',
     spotify: 'https://open.spotify.com/artist/1lmRzXTqkuJ8Fd8DtRKsiD',
     members:
@@ -138,9 +142,7 @@ const schedule = [
       'Next to Kin is made up of Ryan Cirbus on the bass, his sister, Mallory Evans on lead vocal and rhythm guitar, their friend (and everybody knows it) Mary Tewksbury on lead guitar and vocals. Shaun Andrews plays drums. Next To Kin released their first full length studio album, Kindergarten, in May of 2017. The album features 11 original songs for every mood. With originals and covers that span many genres, Next to Kin serves up good music and good humor which makes for a really good time!',
     facebook: 'http://facebook.com/next2kin',
     instagram: 'http://instagram.com/nexttokinmusic',
-    website: 'http://nexttokinmusic.com',
-    youtube: 'www.nexttokinmusic.com',
-    spotify: 'www.nexttokinmusic.com'
+    website: 'http://nexttokinmusic.com'
   },
   {
     day: 'SATURDAY',
@@ -150,7 +152,7 @@ const schedule = [
     img: fireSide2,
     members: 'Nick Ruffo',
     bio:
-      'The 1st decade of Nick&#39;s life was based on Dinosaur books &amp; Nascar.  His father Tim exposed him to music at a young age, but Nick wasn&#39;t interested until he got past the distractions of candy &amp; puberty. In 2012, he wrote his first rap verse as a way to get his buddy to break up with his no good girlfriend. His 1st time on stage was in 2014, he performed a song called &quot;Grapes&quot; &amp; threw them at the audience as well.  Nick has spent the past 7 years cooking / serving food to the public, as well as writing / recording rap music in basements.',
+      "The 1st decade of Nick's life was based on Dinosaur books and Nascar.  His father Tim exposed him to music at a young age, but Nick wasn't interested until he got past the distractions of candy and puberty. In 2012, he wrote his first rap verse as a way to get his buddy to break up with his no good girlfriend. His first time on stage was in 2014, where he performed a song called 'Grapes' and threw them at the audience as well.  Nick has spent the past 7 years cooking / serving food to the public, as well as writing / recording rap music in basements.",
     website: 'http://soundcloud.com/ruffo-the-show',
     music: 'http://soundcloud.com/ruffo-the-show/surf-n-turf-1'
   },
@@ -163,10 +165,10 @@ const schedule = [
     members: 'Luke Rae, Joel Mincer, Mike Towner',
     bio:
       'Formed in 2017, A Part of Pluto started out as a cover band. They soon discovered their musical chemistry would create original content that had to be made. With high energy songs and explosive stage presence, A Part of Pluto puts on a show that’ll entertain you all night long. Influenced by bands such as Tool, Highly Suspect, Chevelle, and Nine Inch Nails; A Part of Pluto – Luke Rae (Guitar/Vocals) Joel Mincer (Bass/Vocals) Mike Towner (Drums) – quickly found their distinct sound. A Part of Pluto brings a lot of creativity to their music; with over 20 years of combined music playing. Recently accomplishing their first single at Sons of Apollo studio and playing live at WVBR 93.5FM radio station for The Last Exit for the Lost radio show, A Part of Pluto aims to do bigger and more shows in the future. A full length album is in the works as well.',
-    facebook: 'https://www.facebook.com/APartofPluto/',
+    facebook: 'https://facebook.com/APartofPluto/',
     youtube:
-      'https://www.youtube.com/channel/UChx05I0qoJ5st1wbApIwb7w?view_as=subscriber',
-    instagram: 'https://www.instagram.com/apartofpluto/'
+      'https://youtube.com/channel/UChx05I0qoJ5st1wbApIwb7w?view_as=subscriber',
+    instagram: 'https://instagram.com/apartofpluto/'
   },
   {
     day: 'SATURDAY',
@@ -174,14 +176,14 @@ const schedule = [
     artist: 'Chris and Corey Ruffo',
     stage: 'Side stage',
     img: fireSide2,
-    facebook: 'https://www.facebook.com/ChrisRuffoMusic/',
+    facebook: 'https://facebook.com/ChrisRuffoMusic/',
     website: 'https://christopherruffomusic.bandcamp.com/',
     youtube:
-      'https://www.youtube.com/channel/UCHEy8M7NFfKk-eLznQHLdjQ?view_as=subscriber',
+      'https://youtube.com/channel/UCHEy8M7NFfKk-eLznQHLdjQ?view_as=subscriber',
     music: 'https://christopherruffomusic.bandcamp.com/',
     members: 'Christopher Ruffo, Corey Ruffo',
     bio:
-      'Christopher Ruffo is an experienced musician from Endwell NY; who plays a variety of original music and covers in modern rock &amp; Americana music.  Chris sang lead vocals and played rhythm guitar for the band Deveroe; releasing three albums and performing at venues all over upstate New York. Corey Ruffo is a talented up and coming artist from Ogden Utah; who brings an extraordinary voice and great energy to the stage.  Corey is an alternative and hard rock vocalist with a passion for all kinds of music.'
+      'Christopher Ruffo is an experienced musician from Endwell NY; who plays a variety of original music and covers in modern rock and Americana music.  Chris sang lead vocals and played rhythm guitar for the band Deveroe; releasing three albums and performing at venues all over upstate New York. Corey Ruffo is a talented up and coming artist from Ogden Utah; who brings an extraordinary voice and great energy to the stage.  Corey is an alternative and hard rock vocalist with a passion for all kinds of music.'
   },
   {
     day: 'SATURDAY',
@@ -198,8 +200,8 @@ const schedule = [
     img: geneHummel,
     facebook: 'www.facebook.com/gene.hummel.33',
     instagram: 'www.instagram.com/genehummelmusic',
-    website: 'www.genehummel.com',
-    youtube: 'www.youtube.com/user/genehummel1967',
+    website: 'http://genehummel.com',
+    youtube: 'http://youtube.com/user/genehummel1967',
     members: 'Gene Hummel',
     bio:
       'Outlaw Country Artist Gene Hummel developed a love for music at a very young age at small family gatherings. At these gatherings he would often hear family members singing acapella versions of Motown and Golden Oldies hits. Not long after he developed a love for guitar. In the early 70’s, during the Outlaw Country movement, his mother purchased him his first guitar. A $50 nylon string folk model which through much trial and error Gene taught himself to play by ear. Now a veteran of well over 30 years of performing live playing many different genres of music, with too many influences to list, Gene has settled on the music he cut his teeth on, Heartbeat of America Honky Tonk Outlaw Country & Southern Rock. Gene regularly performs through out NY, PA and where ever else the road calls him. He traveled like this for many years with his former band Gator Stu and continues with current band Hummel’s Jug as well as solo. Gene has hared the stage with many great artists such as Molly Hatchet, Studebaker John and the Hawks, Brett Michaels, Blackfoot, The Fabulous Thunderbirds and Mountain, to name a few'
@@ -252,7 +254,7 @@ const schedule = [
       'Jon and Jaime play a unique brand of original music that teeters between dark alternative and blues guitar rock. They also cover material that spans the last five decades. There’s plenty of energy and enthusiasm in every performance. Influences included Deftones, Black Keys, Queen, The Beatles, Gary Clark Jr, and many more.',
     youtube: 'https://youtu.be/Q6miID51EAI',
     facebook:
-      'https://www.facebook.com/Under-The-Rug-862098820564148/?hc_ref=ARQFyq7A5TR2SNtV-EbEQS7A-mKP_1Fhvexl0I1fpE-1AJ80iLmerWx_xQ6CM2_5w0s&ref=nf_target&__xts__[0]=68.ARCLEGaExSH1bKsDOEPrirOFgKBPFd5JdtN6RL5ZJolYO52GrcBB76FClHR2YHWcv4CmgZEMgZ5JczKUOTALdJ-99KWEoOQ4m8bOEignu1a4l9NlVtj5Me6zYg5iuZ-1OKBg9yOyxGKVDgHefGtAsqjZQsT3c5i9sejl6GyWN_8RMocPLrTSOamTywIYEPOijI-J2J3b1jVqDT0xC_0fKimMTvJPukcF_DBXLnZaaQ5NC0Q8zJYpkS5Z0j_Ai9jID2yQXGRXm_A&__tn__=kC-R'
+      'https://facebook.com/Under-The-Rug-862098820564148/?hc_ref=ARQFyq7A5TR2SNtV-EbEQS7A-mKP_1Fhvexl0I1fpE-1AJ80iLmerWx_xQ6CM2_5w0s&ref=nf_target&__xts__[0]=68.ARCLEGaExSH1bKsDOEPrirOFgKBPFd5JdtN6RL5ZJolYO52GrcBB76FClHR2YHWcv4CmgZEMgZ5JczKUOTALdJ-99KWEoOQ4m8bOEignu1a4l9NlVtj5Me6zYg5iuZ-1OKBg9yOyxGKVDgHefGtAsqjZQsT3c5i9sejl6GyWN_8RMocPLrTSOamTywIYEPOijI-J2J3b1jVqDT0xC_0fKimMTvJPukcF_DBXLnZaaQ5NC0Q8zJYpkS5Z0j_Ai9jID2yQXGRXm_A&__tn__=kC-R'
   },
   {
     day: 'SATURDAY',
@@ -262,7 +264,7 @@ const schedule = [
     img: tijuanaDangerDogs,
     members: 'Jesse Wheeler, Caleb Wheeler, Keagan, Johnny Danger',
     Website: 'http://tijuanadangerdogs.com',
-    music: 'tijuanadangerdogs.com/music',
+    music: 'http://tijuanadangerdogs.com/music',
     facebook: 'http://facebook.com/49dogs',
     instagram: 'https://www.instagram.com/tijuanadangerdogs/?hl=en',
     youtube: 'https://youtu.be/IiG47iRddYU'
@@ -273,8 +275,8 @@ const schedule = [
     artist: 'Bootknife',
     stage: 'Side stage',
     img: bootknife,
-    facebook: 'Facebook https://www.facebook.com/wearebootknife/',
-    instagram: 'Instagram https://www.instagram.com/wearebootknife/',
+    facebook: 'Facebook https://facebook.com/wearebootknife/',
+    instagram: 'Instagram https://instagram.com/wearebootknife/',
     youtube: 'https://youtu.be/0vLxS8Mw47s',
     music: 'https://music.apple.com/us/album/bootknife/1476464750',
     spotify: 'Randall Bazin and Chris Lantry',
@@ -294,10 +296,10 @@ const schedule = [
       'Randy McStine is a musician, songwriter and producer.  He is primarily known as a guitarist and vocalist, whose initial work under the name Lo-Fi Resistance has led to collaborations with members of King Crimson, Joe Satriani, Porcupine Tree, Tears For Fears, Miles Davis, and more. Fueled by a wide array of influences, McStine’s work embraces genres such as Rock, Alternative, Progressive, Blues, Singer-Songwriter, Folk, Pop, and Ambient. Towards the end of 2019, McStine released a new album called Idle, which coincided with a 20-date North American tour.',
     quote:
       '“McStine is an artist in the true sense of the word, and one we will be hearing about often in the future.” - Scott Medina, Sonic Perspectives',
-    facebook: 'https://www.facebook.com/randymcstinemusic/',
-    instagram: 'https://www.instagram.com/randymcstine/',
-    website: 'www.randymcstine.com',
-    youtube: 'https://www.youtube.com/watch?v=J9-WWUFBosM'
+    facebook: 'https://facebook.com/randymcstinemusic/',
+    instagram: 'https://instagram.com/randymcstine/',
+    website: 'http://randymcstine.com',
+    youtube: 'https://youtube.com/watch?v=J9-WWUFBosM'
   },
   {
     day: 'SATURDAY',
