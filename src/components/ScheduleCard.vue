@@ -17,9 +17,12 @@
                 <span class="schedule-artist">{{ artist.artist }}</span>
                 <br />
 
-                <span @click="billingSwitch('byDay')" class="schedule-day">{{ artist.day }}</span>/
-                <span class="schedule-time">{{ artist.time }}</span>/
-                <span @click="billingSwitch('byStage')" class="schedule-stage">{{ artist.stage }}</span>
+                <span @click="billingSwitch('byDay')" class="schedule-day">{{ artist.day }}</span> at
+                <span class="schedule-time">{{ artist.time }}</span> on the
+                <span
+                  @click="billingSwitch('byStage')"
+                  class="schedule-stage"
+                >{{ artist.stage }} stage</span>
               </p>
 
               <div
@@ -91,6 +94,7 @@ function billingSwitch(event) {
   }
 }
 */
+
 export default {
   data() {
     return {

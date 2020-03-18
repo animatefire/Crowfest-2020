@@ -1,28 +1,5 @@
 <template>
-  <div>
-    <header class="header" :style="{
-      backgroundImage: `url('${schedule[x].img}')`
-    }">
-      <div class="screen">
-        <logo class="logo" />
-        <h1>
-          <span class="title">June 12-13 2020</span>
-
-          <a href="#/location">
-            <span class="subtitle">Ransom Park Tioga Center, NY</span>
-          </a>
-        </h1>
-        <ticket-button />
-      </div>
-    </header>
-
-    <!--
-    <artists />
-    <location />
-    <camping />
-    <about />
-    -->
-  </div>
+  <artist-card />
 </template>
 
 <script>
@@ -69,6 +46,7 @@ span {
   font-size: 2.5rem;
   font-weight: 400;
 }
+
 .subtitle {
   font-weight: 300;
   font-size: 1.6rem;
@@ -78,12 +56,5 @@ span {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   padding: 1em;
-}
-
-.btn {
-  position: inline-block;
-  //top: 70vh;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
 }
 </style>

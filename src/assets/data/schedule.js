@@ -22,20 +22,22 @@ import marty from '../img/artists/marty.png';
 const schedule = [
   {
     day: 'FRIDAY',
-    time: '5:30-6:00',
+    time: '5:30',
+    finish: '6:00',
     artist: "Kevin Doupe'",
-    stage: 'Side Stage',
+    stage: 'Side',
     img: kevinDoupe,
     facebook: 'http://facebook.com/kevindoupemusic',
-    members: "Kevin Doupe'",
+    members: "Kevin'",
     bio:
       'A Little Something For Everyone Kevin Doupe, former front man of Forever’s Anthem which disbanded back in 2005, has recently taken the stage back and now plays some of the best acoustic covers you will all know. From the 70s to today, some rock, country and Americana; the variety is wide, and the passion is deep. It’s been said, “He’s so good and everyone loves him” – Kevin’s Mom.'
   },
   {
     day: 'FRIDAY',
-    time: '6:00-7:00',
+    time: '6:00',
+    finish: '7:00',
     artist: 'Uncle Uku & The Guise',
-    stage: 'Main Stage',
+    stage: 'Main',
     img: uncleUku,
     members:
       'Troy Abbott – Lead vocals, Ukulele Roscoe Hafler – Guitar, Background Vocals Chris Howard - Drums Seth Quinones– Percussion, Background Vocals Josh Wray - Bass',
@@ -48,9 +50,10 @@ const schedule = [
   },
   {
     day: 'FRIDAY',
-    time: '7:00-7:30',
+    time: '7:00',
+    finish: '7:30',
     artist: 'Tim Ruffo with Michaela Clark',
-    stage: 'Side Stage',
+    stage: 'Side',
     img: timRuffo,
     members: 'Tim Ruffo, Michaela Clark',
     bio:
@@ -68,9 +71,10 @@ const schedule = [
   },
   {
     day: 'FRIDAY',
-    time: '7:30-8:30',
+    time: '7:30',
+    finish: '8:30',
     artist: "The Smokin' Crows",
-    stage: 'Main Stage',
+    stage: 'Main',
     img: smokinCrows,
     members:
       'Jason Porter – Lead Vocals, Guitar, Harmonica / Chip Beam – Bass / Vince DiRosa – Drums / Luke Foster – Lead Guitar',
@@ -81,9 +85,10 @@ const schedule = [
   },
   {
     day: 'FRIDAY',
-    time: '8:30-9:00',
+    time: '8:30',
+    finish: '9:00',
     artist: 'Marty and Jen',
-    stage: 'Side Stage',
+    stage: 'Side',
     img: marty,
     members: 'Marty Neuhard and Jenn Perkins',
     bio:
@@ -92,9 +97,10 @@ const schedule = [
   },
   {
     day: 'FRIDAY',
-    time: '9:00-10:30',
+    time: '9:00',
+    finish: '10:30',
     artist: "Eagle's Tribute",
-    stage: 'Main Stage',
+    stage: 'Main',
     img: eagles
   },
   {
@@ -106,9 +112,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '12:00-1:00',
+    time: '12:00',
+    finish: '1:00',
     artist: "Glenmary's Ghost",
-    stage: 'Main stage',
+    stage: 'Main',
     img: glenmarysGhost,
     facebook: 'http://facebook.com/glenmarysghost',
     instagram: 'http://instagram.com/glenmarysghost',
@@ -122,9 +129,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '1:00-1:15',
+    time: '1:00',
+    finish: '1:00',
     artist: 'Barleywine',
-    stage: 'Side stage',
+    stage: 'Side',
     img: fireSide2,
     members:
       'William Dawnstar, vocals, guitar, George Gleason, Mandolin, octave mandolin, guitar backing vocals Larry Rapshaw, Accordian and Violin',
@@ -133,9 +141,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '1:15-2:15',
+    time: '1:15',
+    finish: '2:15',
     artist: 'Next to Kin',
-    stage: 'Main stage',
+    stage: 'Main',
     img: nextToKin,
     members: 'Shaun Andrews, Ryan Cirbus, Mallory Evans, Mary Tewksbury.',
     bio:
@@ -146,9 +155,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '2:15-2:30',
+    time: '2:15',
+    finish: '2:30',
     artist: 'Nick Ruffo',
-    stage: 'Side stage',
+    stage: 'Side',
     img: fireSide2,
     members: 'Nick Ruffo',
     bio:
@@ -158,9 +168,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '2:30-3:30',
+    time: '2:30',
+    finish: '3:30',
     artist: 'A Part of Pluto',
-    stage: 'Main stage',
+    stage: 'Main',
     img: partOfPluto,
     members: 'Luke Rae, Joel Mincer, Mike Towner',
     bio:
@@ -172,9 +183,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '3:30-3:45',
+    time: '3:30',
+    finish: '3:45',
     artist: 'Chris and Corey Ruffo',
-    stage: 'Side stage',
+    stage: 'Side',
     img: fireSide2,
     facebook: 'https://facebook.com/ChrisRuffoMusic/',
     website: 'https://christopherruffomusic.bandcamp.com/',
@@ -187,16 +199,18 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '3:45-4:45',
+    time: '3:45',
+    finish: '4:45',
     artist: 'J Floyd & The Grave Sitters',
-    stage: 'Main stage',
+    stage: 'Main',
     img: jFloyd
   },
   {
     day: 'SATURDAY',
-    time: '4:45-5:00',
+    time: '4:45',
+    finish: '5:00',
     artist: 'Gene Hummel',
-    stage: 'Side stage',
+    stage: 'Side',
     img: geneHummel,
     facebook: 'www.facebook.com/gene.hummel.33',
     instagram: 'www.instagram.com/genehummelmusic',
@@ -208,9 +222,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '5:00-6:00',
+    time: '5:00',
+    finish: '6:00',
     artist: 'Mike Davis and The Laughing Buddha Episodes',
-    stage: 'Main stage',
+    stage: 'Main',
     img: mikeDavis,
     members: 'Mike Davis, Tom Westcott, Mike Melnyk, Cooper Casterline',
     bio:
@@ -223,9 +238,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '6:00-6:15',
+    time: '6:00',
+    finish: '6:15',
     artist: 'Tim Ruffo',
-    stage: 'Side stage',
+    stage: 'Side',
     img: timRuffo,
     members: 'Tim Ruffo',
     bio:
@@ -243,9 +259,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '6:15-7:15',
+    time: '6:15',
+    finish: '7:15',
     artist: 'Woodshed Prophets',
-    stage: 'Main stage',
+    stage: 'Main',
     img: woodshedProphets,
     members:
       'Rob Stachyra - lead guitar, vocals / Dan Hardy - guitar, vocals / Ed Gliha - bass, vocals / Dan “Bird-Dog” Dunham - drums, vocals',
@@ -257,9 +274,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '7:15-7:45',
+    time: '7:15',
+    finish: '7:45',
     artist: 'Under the Rug',
-    stage: 'Side stage',
+    stage: 'Side',
     img: underTheRug,
     members:
       'Jaime Renfro (Vocals, Guitar, Drums), Jonathan Oxx (Lead Guitar, Vocals)',
@@ -271,9 +289,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '7:45-8:45',
+    time: '7:45',
+    finish: '8:45',
     artist: 'Tijuana Danger Dogs',
-    stage: 'Main stage',
+    stage: 'Main',
     img: tijuanaDangerDogs,
     members: 'Jesse Wheeler, Caleb Wheeler, Keagan, Johnny Danger',
     Website: 'http://tijuanadangerdogs.com',
@@ -284,9 +303,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '8:45-9:15',
+    time: '8:45',
+    finish: '9:15',
     artist: 'Bootknife',
-    stage: 'Side stage',
+    stage: 'Side',
     img: bootknife,
     facebook: 'Facebook https://facebook.com/wearebootknife/',
     instagram: 'Instagram https://instagram.com/wearebootknife/',
@@ -299,9 +319,10 @@ const schedule = [
   },
   {
     day: 'SATURDAY',
-    time: '9:15-10:30',
+    time: '9:15',
+    finish: '10:30',
     artist: 'Randy McStine Trio',
-    stage: 'Main stage',
+    stage: 'Main',
     img: randyMcstine,
     members:
       'Randy McStine - Vocals, Guitar Michael Wu - Bass Cooper Casterline - Drums',
