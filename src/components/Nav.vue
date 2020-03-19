@@ -9,7 +9,8 @@
       <a
         target="_blank"
         href="https://www.eventbrite.com/e/crowfest-2020-tickets-92799043437#tickets"
-      >Tickets</a>
+        >Tickets</a
+      >
       <router-link to="/artists">Schedule</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/location">Location</router-link>
@@ -19,72 +20,72 @@
 </template>
 
 <script>
-//import logo from "../assets/icons/crow.svg";
+  //import logo from "../assets/icons/crow.svg";
 
-export default {
-  data() {
-    return {
-      //logo
-    };
-  }
-};
+  export default {
+    data() {
+      return {
+        //logo
+      };
+    }
+  };
 </script>
 
 <style scoped lang="scss">
-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  align-items: center;
-  height: 10rem;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 80%),
-    rgba(0, 0, 0, 65%),
-    rgba(0, 0, 0, 0%)
-  );
-}
-
-.nav-links {
-  display: flex;
-}
-
-.header__logo {
-  height: 3rem;
-  width: auto;
-  display: flex;
-  fill: #eee;
-}
-
-.header__nav {
-  a {
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0 0.6rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 10rem;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 80%),
+      rgba(0, 0, 0, 65%),
+      rgba(0, 0, 0, 0%)
+    );
   }
-}
 
-@media screen and (min-width: 35.9rem) {
+  .nav-links {
+    display: flex;
+  }
+
   .header__logo {
-    height: 6rem;
+    height: 3rem;
+    width: auto;
+    display: flex;
+    fill: #eee;
   }
+
   .header__nav {
     a {
-      font-size: 1.8rem;
-      padding: 0 0.8rem;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0 0.6rem;
     }
   }
-}
 
-@media screen and (min-width: 56rem) {
-  .header__logo {
-    height: 8rem;
-  }
-  .header__nav {
-    a {
-      font-size: 2rem;
-      padding: 0 1rem;
+  @media screen and (min-width: 35.9rem) {
+    .header__logo {
+      height: 6rem;
+    }
+    .header__nav {
+      a {
+        font-size: 1.4rem;
+        padding: 0 0.8rem;
+      }
     }
   }
-}
+
+  @media screen and (min-width: 56rem) {
+    .header__logo {
+      height: 8rem;
+    }
+    .header__nav {
+      a {
+        font-size: 2rem;
+        padding: 0 1rem;
+      }
+    }
+  }
 </style>

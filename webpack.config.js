@@ -1,5 +1,6 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './src/main.js',
@@ -35,6 +36,8 @@ module.exports = {
           'style-loader',
           // Translates CSS into CommonJS
           'css-loader',
+          //will help add prefixes to our css...
+          'postcss-loader',
           // Compiles Sass to CSS
           'sass-loader'
         ]
@@ -49,5 +52,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [new VueLoaderPlugin()]
+  plugins: [new VueLoaderPlugin(), require('autoprefixer')]
 };
