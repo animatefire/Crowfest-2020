@@ -1,4 +1,6 @@
 import fireSide from '../img/fire_side.jpg';
+//import fireSide from '../img/fire_side.jpg?sizes[]=1000,sizes[]=600,sizes[]=400';
+
 import fireSide2 from '../img/fire_side_2.jpg';
 import eagles from '../img/artists/eagles.jpg';
 import kevinDoupe from '../img/artists/kevin_doupe.jpg';
@@ -16,7 +18,6 @@ import underTheRug from '../img/artists/under_the_rug.jpg';
 import woodshedProphets from '../img/artists/woodshed_prophets.jpg';
 import randyMcstine from '../img/artists/randy_mcstine.jpg';
 import bootknife from '../img/artists/bootknife.jpg';
-//import timRuffo from '../img/artists/tim_ruffo.jpg';
 import marty from '../img/artists/marty.png';
 
 const schedule = [
@@ -28,9 +29,11 @@ const schedule = [
     stage: 'Side',
     img: kevinDoupe,
     facebook: 'http://facebook.com/kevindoupemusic',
-    members: "Kevin'",
+    members: "Kevin Doupe'",
     bio:
-      'A Little Something For Everyone Kevin Doupe, former front man of Forever’s Anthem which disbanded back in 2005, has recently taken the stage back and now plays some of the best acoustic covers you will all know. From the 70s to today, some rock, country and Americana; the variety is wide, and the passion is deep. It’s been said, “He’s so good and everyone loves him” – Kevin’s Mom.'
+      'A Little Something For Everyone Kevin Doupe, former front man of Forever’s Anthem which disbanded back in 2005, has recently taken the stage back and now plays some of the best acoustic covers you will all know. From the 70s to today, some rock, country and Americana; the variety is wide, and the passion is deep.',
+    quote:
+      'It’s been said, “He’s so good and everyone loves him” – Kevin’s Mom.'
   },
   {
     day: 'FRIDAY',
@@ -42,11 +45,12 @@ const schedule = [
     members:
       'Troy Abbott – Lead vocals, Ukulele Roscoe Hafler – Guitar, Background Vocals Chris Howard - Drums Seth Quinones– Percussion, Background Vocals Josh Wray - Bass',
     bio:
-      'It takes a big person to play a tiny ukulele in a rock band. From Corning, Uncle Uku &amp; The Guise is for all intents and purposes a rock band that seems to have harvested its beguiling tunes from a genre it seems to be the only member of. Uncle Uku comforts and guides your soul with his cosmic mastery of the vocal-ukelelean arts, whilst the Guise bring you back in sync with the passion and sexuality of your primordial being.',
+      'From Corning, Uncle Uku and The Guise is for all intents and purposes a rock band that seems to have harvested its beguiling tunes from a genre it seems to be the only member of. Uncle Uku comforts and guides your soul with his cosmic mastery of the vocal-ukelelean arts, whilst the Guise bring you back in sync with the passion and sexuality of your primordial being.',
     youtube: 'https://youtu.be/jWugexHIU54',
     music: 'https://soundcloud.com/uncleuku',
     website:
-      'http://uncleukuandtheguise.secureserversites.net/?fbclid=IwAR3XKzIcQGPGC2VTgNRKR6qZ63SXAhxYd_GfozpbwgFa_Jx3Ym6CSZlTsmA'
+      'http://uncleukuandtheguise.secureserversites.net/?fbclid=IwAR3XKzIcQGPGC2VTgNRKR6qZ63SXAhxYd_GfozpbwgFa_Jx3Ym6CSZlTsmA',
+    quote: 'It takes a big person to play a tiny ukulele in a rock band. '
   },
   {
     day: 'FRIDAY',
@@ -294,6 +298,9 @@ const schedule = [
     artist: 'Tijuana Danger Dogs',
     stage: 'Main',
     img: tijuanaDangerDogs,
+    bio:
+      "Well here's the short version....Tijuana Danger Danger Dogs began in 2011 as a collaboration between Michael Toyryla (aka Johnny Danger) and Jesse Wheeler, in what was to be an outlet for the pop and electronic ideas they couldn't use in their other projects. The two met in 1999 and their chemistry was evident immediately. They formed several hard rock bands together and earned their stripes gigging regularly and releasing multiple independent recordings.",
+    quote: 'Danger is our middle name.',
     members: 'Jesse Wheeler, Caleb Wheeler, Keagan, Johnny Danger',
     Website: 'http://tijuanadangerdogs.com',
     music: 'http://tijuanadangerdogs.com/music',

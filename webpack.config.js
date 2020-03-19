@@ -43,7 +43,15 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        test: /\.(jpe?g|png)$/i,
+        use: ['responsive-loader'],
+        options: {
+          adapter: require('responsive-loader/sharp'),
+          sizes: [300, 600, 900]
+        }
+      },
+      {
+        test: /\.(svg|gif)$/,
         use: ['file-loader']
       },
       {
@@ -52,5 +60,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [new VueLoaderPlugin(), require('autoprefixer')]
+  plugins: [new VueLoaderPlugin(), require(autoprefixer)]
 };
