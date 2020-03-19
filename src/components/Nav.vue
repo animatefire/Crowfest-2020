@@ -37,6 +37,12 @@ nav {
   flex-flow: row nowrap;
   align-items: center;
   height: 10rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 80%),
+    rgba(0, 0, 0, 65%),
+    rgba(0, 0, 0, 0%)
+  );
 }
 
 .nav-links {

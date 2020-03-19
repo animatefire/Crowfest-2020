@@ -22,6 +22,7 @@ import spotifyIcon from './components/icons/spotify__icon.vue';
 import twitterIcon from './components/icons/twitter__icon.vue';
 import websiteIcon from './components/icons/website__icon.vue';
 import countdown from './components/Countdown.vue';
+import mincer from './components/mincer.vue';
 
 // Components Registration
 Vue.component('navigation', navigation);
@@ -39,6 +40,7 @@ Vue.component('music-icon', musicIcon);
 Vue.component('twitter-icon', twitterIcon);
 Vue.component('website-icon', websiteIcon);
 Vue.component('countdown', countdown);
+Vue.component('mincer', mincer);
 
 // View Imports
 import Home from './views/Home.vue';

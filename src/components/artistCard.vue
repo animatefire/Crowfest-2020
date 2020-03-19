@@ -1,6 +1,6 @@
 <template>
   <!--<div id="background" :style="{ backgroundImage: `url('${schedule[hover].img}')`}">-->
-  <div id="background" :style="{ backgroundImage: `url('${festival}')`}">
+  <div id="background">
     <div class="screen">
       <!--////////////////////////-->
       <logo class="poster-logo" />
@@ -93,7 +93,7 @@ export default {
 
 .subtitle {
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
 }
 
 a {
@@ -109,7 +109,8 @@ h1 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: rgba(0, 0, 0, 0.4);
+  //background-color: rgba(0, 0, 0, 0.4);
+
   height: 100%;
   width: 100%;
   padding: 1rem;

@@ -16,6 +16,12 @@
         </li>
       </ul>
     </div>
+    <a
+      target="_blank"
+      href="https://www.facebook.com/pages/category/Event/Audie-J-Mincer-PTSD-Cancer-Awareness-1850863508329391/"
+    >
+      <mincer class="icon footer--mincer" />
+    </a>
   </footer>
 </template>
 
@@ -37,6 +43,11 @@ p {
 
 .icon {
   height: 1.6rem;
+}
+
+.footer--mincer {
+  height: 7rem;
+  width: auto;
 }
 
 h5 {

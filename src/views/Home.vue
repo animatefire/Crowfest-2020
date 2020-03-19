@@ -53,7 +53,6 @@ span {
 }
 
 .screen {
-  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   padding: 1em;
 }
