@@ -22,8 +22,6 @@ export default {
   fill: #eee;
   height: 20rem;
   max-width: 80vw;
-  //margin-bottom: -7rem;
-  //margin-top: -5rem;
 }
 
 .header {
